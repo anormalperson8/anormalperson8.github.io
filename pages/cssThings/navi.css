@@ -1,6 +1,6 @@
 .navi {
     overflow: hidden;
-    background-color: black;
+    background: black;
     margin: auto;
 }
 .navi a {
@@ -9,10 +9,10 @@
     display: block;
     color: white;
     text-align: center;
-    padding: 4px 0;
+    padding: 5px 0 5px 0;
     text-decoration: none;
 }
 .navi a:hover {
-    background-color: beige;
-    color: black;
+    background-color: chocolate;
+    color: white;
 }
