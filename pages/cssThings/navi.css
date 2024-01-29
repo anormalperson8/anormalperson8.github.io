@@ -1,0 +1,18 @@
+.navi {
+    overflow: hidden;
+    background-color: black;
+    margin: auto;
+}
+.navi a {
+    width: 25%;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 4px 0;
+    text-decoration: none;
+}
+.navi a:hover {
+    background-color: beige;
+    color: black;
+}

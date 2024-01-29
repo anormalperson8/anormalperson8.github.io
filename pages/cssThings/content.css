@@ -1,0 +1,11 @@
+.content {
+    background: beige;
+    border-style: none;
+    margin: 0;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 100%;
+    /*padding-left: 50px;*/
+    text-align: center;
+    font-size: 100px;
+}
