@@ -11,6 +11,11 @@
     width: 100px;
 }
 
+.header td {
+    float: none;
+    width: 20%;
+}
+
 .avatar_img {
     border: 4px solid transparent;
     border-radius: 100%;
@@ -19,7 +24,7 @@
 
 .avatar_img:hover {
     border: 4px solid transparent;
-    background-color: beige;
+    background-color: cornsilk;
     box-shadow: 0 6px 8px 0 rgba(0, 0, 0, .65);
 }
 

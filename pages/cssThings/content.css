@@ -22,8 +22,8 @@
 
 .content ul {
     font-size: 0.75em;
-    margin-left: 13%;
-    margin-right: 13%;
+    margin-left: 25%;
+    margin-right: 25%;
     border-style: groove;
     list-style-type: square;
 }
@@ -35,7 +35,7 @@
 .button_thing {
     border: 3px solid transparent;
     color: black;
-    background-color: beige;
+    background-color: cornsilk;
     text-align: center;
     text-decoration: none;
     font-size: 16px;

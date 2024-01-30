@@ -1,3 +1,3 @@
-# anormalperson8.github.io
+# [anormalperson8.github.io](https://anormalperson8.github.io)
 
-How does one write a website
+This is a website currently in development.
