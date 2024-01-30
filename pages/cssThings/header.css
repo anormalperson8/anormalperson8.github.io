@@ -18,6 +18,12 @@
 }
 
 .avatar_img:hover {
-    border: 4px solid #2fa558;
+    border: 4px solid transparent;
+    background-color: beige;
     box-shadow: 0 6px 8px 0 rgba(0, 0, 0, .65);
+}
+
+.avatar_img:active {
+    transform: translate(0, 3px);
+    box-shadow: none;
 }
