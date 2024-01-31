@@ -1,6 +1,6 @@
 .header {
+    overflow: hidden;
     padding: 20px;
-    /*background: beige;*/
     text-align: center;
     border-style: none;
 }

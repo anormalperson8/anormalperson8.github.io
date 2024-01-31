@@ -1,63 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="./cssThings/navi.css">
-    <link rel="stylesheet" href="./cssThings/header.css">
-    <link rel="stylesheet" href="./cssThings/content.css">
-    <title>
-        anormalperson8.github.io
-    </title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            font-family: "JetBrains Mono", sans-serif;
-            margin: 0;
-            background: cornsilk;
-        }
-    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+    $(function(){
+        $("head").load("top.html")
+        $("#header").load("header.html")
+        $("#navi").load("navi.html");
+    });
+    </script>
 </head>
 
 <body>
 
-<div class="header">
-    <table style="margin: auto">
-        <tr style="justify-content: center">
-            <td>
+<div id="header"></div>
 
-            </td>
-            <td>
-                <a href="https://github.com/anormalperson8">
-                    <img src="../img/github.png" alt="git" class="avatar_img" style="scale: 0.65"/>
-                </a>
-            </td>
-            <td>
-                <a href="./home.html">
-                    <img src="../img/waving.png" alt="logo" class="avatar_img"/>
-                </a>
-            </td>
-            <td>
-                <a href="https://discord.com/users/392542209393819648">
-                    <img src="../img/discord.png" alt="discord" class="avatar_img" style="scale: 0.65"/>
-                </a>
-            </td>
-            <td>
-                <a href="mailto:anormalperson8@gmail.com">
-                    <img src="../img/email.png" alt="email" class="avatar_img" style="scale: 0.65"/>
-                </a>
-            </td>
-        </tr>
-    </table>
-</div>
-
-
-<div class="navi">
-    <a href="./home.html">Home</a>
-    <a href="./about.html">About Me</a>
-    <a href="./projects.html">Projects</a>
-    <a href="./blog.html">Blog</a>
-    <a href="https://github.com/anormalperson8">GitHub</a>
-</div>
+<div id="navi"></div>
 
 <div class="content">
     <h1>Coming soon!</h1>
