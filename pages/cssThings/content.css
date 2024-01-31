@@ -1,5 +1,5 @@
 .content {
-    /*background: beige;*/
+    overflow: hidden;
     border-style: none;
     margin: 0;
     font-size: 25px;
