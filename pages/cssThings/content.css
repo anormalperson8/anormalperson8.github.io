@@ -33,7 +33,7 @@
 }
 
 .button_thing {
-    border: 3px solid transparent;
+    border: 3px solid black;
     color: black;
     background-color: cornsilk;
     text-align: center;
@@ -41,15 +41,16 @@
     font-size: 16px;
     font-family: Jetbrain, serif;
     font-weight: 700;
-    padding: 10px 21px;
-    display: block;
+    padding: 15px 21px;
+    display: flex;
     border-radius: 36px;
-    margin: auto;
-    transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    margin: auto auto 75px auto;
+    transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+    align-items: center;
 }
 
 .button_thing:hover {
-    border: 3px solid black;
+    transform: translate(-2px, -3px);
     box-shadow: black 2px 3px 4px;
     cursor: inherit;
 }
@@ -57,6 +58,10 @@
 .button_thing:active {
     transform: translate(2px, 3px);
     box-shadow: none;
+}
+
+a {
+    color: darkblue;
 }
 
 a:link {
@@ -70,6 +75,23 @@ a:hover {
 }
 a:active {
   text-decoration: none;
+}
+
+.project {
+    margin: 20px auto 20px auto;
+    width: 50%;
+    border: 4px groove;
+    align-items: center;
+}
+
+.project h3 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.project p {
+    padding: 0 10px 20px 10px;
+    text-align: center;
 }
 
 
