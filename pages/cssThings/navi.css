@@ -15,4 +15,5 @@
 .navi a:hover {
     background-color: chocolate;
     color: white;
+    transition: background-color 0.2s;
 }
