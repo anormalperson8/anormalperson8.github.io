@@ -11,9 +11,8 @@
     text-align: center;
     padding: 5px 0 5px 0;
     text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
 }
 .navi a:hover {
     background-color: chocolate;
-    color: white;
-    transition: background-color 0.2s;
 }

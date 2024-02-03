@@ -20,10 +20,10 @@
     border: 4px solid transparent;
     border-radius: 100%;
     padding: 2px;
+    transition: box-shadow 0.2s ease-in-out;
 }
 
 .avatar_img:hover {
-    transition: box-shadow 0.2s;
     box-shadow: 0 6px 8px 0 rgba(0, 0, 0, .65);
 }
 
