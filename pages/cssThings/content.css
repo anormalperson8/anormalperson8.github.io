@@ -42,11 +42,9 @@
     font-family: Jetbrain, serif;
     font-weight: 700;
     padding: 15px 21px;
-    display: flex;
+    display: inline;
     border-radius: 36px;
-    margin: auto auto 75px auto;
     transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
-    align-items: center;
 }
 
 .button_thing:hover {
@@ -82,16 +80,16 @@ a:active {
     width: 50%;
     border: 4px groove;
     align-items: center;
+    overflow:hidden;
+    text-align: center;
 }
 
 .project h3 {
     font-size: 1.75em;
-    text-align: center;
 }
 
 .project p {
     padding: 0 10px 20px 10px;
-    text-align: center;
 }
 
 
