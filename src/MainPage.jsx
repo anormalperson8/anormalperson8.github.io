@@ -4,6 +4,8 @@ import Top from "./components/Top.jsx";
 import Projects from "./components/Projects.jsx";
 import Knowledge from "./components/Knowledge.jsx";
 import Courses from "./components/Courses.jsx";
+import IDPO from "./IDPO.jsx";
+import IDPOTeaching from "./IDPOTeaching.jsx";
 
 const MainPage = () => {
 
@@ -15,6 +17,8 @@ const MainPage = () => {
                 <Knowledge/>
                 <Projects/>
                 <Courses/>
+                <IDPO/>
+                <IDPOTeaching/>
             </div>
 
             <ButtonGradient/>

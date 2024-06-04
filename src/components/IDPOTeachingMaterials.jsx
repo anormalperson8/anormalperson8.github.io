@@ -4,23 +4,23 @@ import {teacherFiles} from "../constants/index.js";
 import Arrow from "../assets/svg/Arrow.jsx";
 import {GradientLight} from "./design/Projects.jsx";
 
-import ust from "../assets/ust.png"
-import {Link} from "react-router-dom";
+// import ust from "../assets/ust.png"
+// import {Link} from "react-router-dom";
 
 const IDPOTeachingMaterials = () => {
     return (
-        <Section id={"materials"}>
+        <Section crosses id={"materials"}>
             <div className={"container relative z-2"}>
-                <div className={"items-center text-center"}>
-                    <Link target="_blank" rel="noopener noreferrer" to={"https://hkust.edu.hk"}>
-                        <img src={ust} alt={"ust"} className={"mx-auto mb-5"}/>
-                    </Link>
-                    <h3 className={"mx-auto mb-5 h3 md:max-w-md lg:max-w-2xl text-center"}>
-                        Introduction to Game Programming Using Python
-                    </h3>
-                </div>
+                {/*<div className={"items-center text-center"}>*/}
+                {/*    <Link target="_blank" rel="noopener noreferrer" to={"https://hkust.edu.hk"}>*/}
+                {/*        <img src={ust} alt={"ust"} className={"mx-auto mb-5"}/>*/}
+                {/*    </Link>*/}
+                {/*    <h3 className={"mx-auto mb-5 h3 md:max-w-md lg:max-w-2xl text-center"}>*/}
+                {/*        Introduction to Game Programming Using Python*/}
+                {/*    </h3>*/}
+                {/*</div>*/}
                 <Heading className={"md:max-w-md lg:max-w-2xl text-center"} title={"Teacher's Materials"}/>
-                <h5 className={"tagline -mt-12 mb-6 text-center text-n-1/85"}>Download files below!</h5>
+                {/*<h5 className={"tagline -mt-12 mb-6 text-center text-n-1/85"}>Download files below!</h5>*/}
                 <div className={"flex flex-wrap gap-10 mb-10"}>
                     {teacherFiles.map((item) => (
                         <div className={"block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"}

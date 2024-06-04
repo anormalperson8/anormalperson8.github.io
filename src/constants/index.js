@@ -56,7 +56,7 @@ import card2 from "../assets/projects/card-2.svg"
 import card3 from "../assets/projects/card-3.svg"
 import card4 from "../assets/projects/card-4.svg"
 import card5 from "../assets/projects/card-5.svg"
-import card6 from "../assets/projects/card-6.svg"
+// import card6 from "../assets/projects/card-6.svg"
 
 export const mainNavigation = [
     {
@@ -86,7 +86,7 @@ export const mainNavigation = [
     {
         id: "4",
         title: "Teaching",
-        url: "/teaching",
+        url: "/#teaching",
         onlyMobile: false,
     },
 ];
