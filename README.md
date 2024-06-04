@@ -1,7 +1,8 @@
-# [anormalperson8.github.io](https://anormalperson8.github.io)
+# My webpage
 
-This is my personal webpage, and basic functions have been finished.
+This wouldn't be possible without tutorial by the YouTube channel JavaScript Mastery.
+The demo repository is at [this link](https://github.com/adrianhajdin/brainwave).
 
-However, parts of the website are still under development.
+The webpage should be hosted at https://anormalperson8.github.io. 
 
-This site will be reformatted soon.
+[//]: # (For the old site, please visit https://anormalperson8.neocities.org. &#40;It is not done&#41;)
