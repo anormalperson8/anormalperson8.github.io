@@ -481,7 +481,7 @@ export const files = [
         text: "For practice in workshop 1.",
         backgroundUrl: card1,
         iconUrl: linkWhite,
-        link: "src/attached_files/Jupyter-Notebooks/Workshop1-Practice.ipynb",
+        link: "/attached_files/Jupyter-Notebooks/Workshop1-Practice.ipynb",
         light: true,
     },
     {
@@ -490,7 +490,7 @@ export const files = [
         text: "Notes for workshop 1 in PDF form.",
         backgroundUrl: card2,
         iconUrl: linkWhite,
-        link: "src/attached_files/Notes/Workshop1-Notes.pdf",
+        link: "/attached_files/Notes/Workshop1-Notes.pdf",
         light: false,
     },
     {
@@ -499,7 +499,7 @@ export const files = [
         text: "Notes for workshop 2 in PDF form.",
         backgroundUrl: card3,
         iconUrl: linkWhite,
-        link: "src/attached_files/Notes/Workshop2-Notes.pdf",
+        link: "/attached_files/Notes/Workshop2-Notes.pdf",
         light: true,
     },
     {
@@ -508,7 +508,7 @@ export const files = [
         text: "A guided implementation of the Hangman game in Python.",
         backgroundUrl: card4,
         iconUrl: linkWhite,
-        link: "src/attached_files/Jupyter-Notebooks/Hangman.ipynb",
+        link: "/attached_files/Jupyter-Notebooks/Hangman.ipynb",
         light: false,
     },
     {
@@ -517,7 +517,7 @@ export const files = [
         text: "A guided implementation of the Hangman game in Python, with answers.",
         backgroundUrl: card5,
         iconUrl: linkWhite,
-        link: "src/attached_files/Jupyter-Notebooks/Hangman_Ans.ipynb",
+        link: "/attached_files/Jupyter-Notebooks/Hangman_Ans.ipynb",
         light: false,
     },
 ];
@@ -529,7 +529,7 @@ export const teacherFiles = [
         text: "Notes for workshop 2 in PDF form. This is the teacher's version that contains transitions.",
         backgroundUrl: card1,
         iconUrl: linkWhite,
-        link: "src/attached_files/Notes/Workshop2-Notes-Teachers.pdf",
+        link: "/attached_files/Notes/Workshop2-Notes-Teachers.pdf",
         light: false,
     },
     {
@@ -538,7 +538,7 @@ export const teacherFiles = [
         text: "A guided implementation of the Number Guessing game in Python, with answers.",
         backgroundUrl: card2,
         iconUrl: linkWhite,
-        link: "src/attached_files/Jupyter-Notebooks/Number_Guessing_Ans.ipynb",
+        link: "/attached_files/Jupyter-Notebooks/Number_Guessing_Ans.ipynb",
         light: true,
     },
     {
@@ -547,7 +547,7 @@ export const teacherFiles = [
         text: "A guided implementation of the Hangman game in Python, with answers.",
         backgroundUrl: card3,
         iconUrl: linkWhite,
-        link: "src/attached_files/Jupyter-Notebooks/Hangman_Ans.ipynb",
+        link: "/attached_files/Jupyter-Notebooks/Hangman_Ans.ipynb",
         light: false,
     },
     {
@@ -568,7 +568,7 @@ export const addFiles = [
         text: "A guide on how to upload Jupyter Notebook files onto the Google Colaboratory platform",
         backgroundUrl: card1,
         iconUrl: linkWhite,
-        link: "src/attached_files/Notes/Jupyter_Notebook_Upload_Instructions.pdf",
+        link: "/attached_files/Notes/Jupyter_Notebook_Upload_Instructions.pdf",
         light: false,
     },
     {
@@ -577,7 +577,7 @@ export const addFiles = [
         text: "Supplementary notes for workshop 1 in PDF form.",
         backgroundUrl: card2,
         iconUrl: linkWhite,
-        link: "src/attached_files/Notes/Workshop1-Notes-Supplementary.pdf",
+        link: "/attached_files/Notes/Workshop1-Notes-Supplementary.pdf",
         light: true,
     },
     {
@@ -586,7 +586,7 @@ export const addFiles = [
         text: "A guided implementation of the Number Guessing game in Python.",
         backgroundUrl: card3,
         iconUrl: linkWhite,
-        link: "src/attached_files/Jupyter-Notebooks/Number_Guessing.ipynb",
+        link: "/attached_files/Jupyter-Notebooks/Number_Guessing.ipynb",
         light: false,
     },
     {
@@ -595,7 +595,7 @@ export const addFiles = [
         text: "A guided implementation of the Number Guessing game in Python, with answers.",
         backgroundUrl: card4,
         iconUrl: linkWhite,
-        link: "src/attached_files/Jupyter-Notebooks/Number_Guessing_Ans.ipynb",
+        link: "/attached_files/Jupyter-Notebooks/Number_Guessing_Ans.ipynb",
         light: false,
     },
 ];
@@ -607,7 +607,7 @@ export const lessonPlan = [
         text: "Proposed lesson plan for workshop 1.",
         backgroundUrl: card1,
         iconUrl: linkWhite,
-        link: "src/attached_files/Lesson-Plans/Lesson1-Plan.pdf",
+        link: "/attached_files/Lesson-Plans/Lesson1-Plan.pdf",
         light: true,
     },
     {
@@ -616,7 +616,7 @@ export const lessonPlan = [
         text: "Proposed lesson plan for workshop 2.",
         backgroundUrl: card2,
         iconUrl: linkWhite,
-        link: "src/attached_files/Lesson-Plans/Lesson2-Plan.pdf",
+        link: "/attached_files/Lesson-Plans/Lesson2-Plan.pdf",
         light: false,
     },
 ];
