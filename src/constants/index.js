@@ -56,31 +56,31 @@ export const mainNavigation = [
     {
         id: "0",
         title: "Home",
-        url: "/#top",
+        url: "/#/#top",
         onlyMobile: false,
     },
     {
         id: "1",
         title: "About Me",
-        url: "/#knowledge",
+        url: "/#/#knowledge",
         onlyMobile: false,
     },
     {
         id: "2",
         title: "Projects",
-        url: "/#project",
+        url: "/#/#project",
         onlyMobile: false,
     },
     {
         id: "3",
         title: "Courses",
-        url: "/#courses",
+        url: "/#/#courses",
         onlyMobile: false,
     },
     {
         id: "4",
         title: "Teaching",
-        url: "/teaching",
+        url: "/#/teaching",
         onlyMobile: false,
     },
 ];
