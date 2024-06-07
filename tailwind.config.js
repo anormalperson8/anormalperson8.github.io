@@ -4,7 +4,7 @@ import plugin from "tailwindcss/plugin";
 /* Source: https://github.com/adrianhajdin/brainwave/blob/main/tailwind.config.js */
 export default {
   content: [
-      "./index.html",
+      "./react.html",
       "./src/**/*.{js,ts,jsx,tsx}",
   ],
     theme: {

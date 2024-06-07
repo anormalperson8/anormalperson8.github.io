@@ -11,7 +11,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
         <Router>
             <Routes>
-                <Route exact path={"/"} element={<MainPage/>}/>
+                <Route exact path={"/react.html"} element={<MainPage/>}/>
                 {/*<Route index exact path={"/teaching"} element={<Navigate to={"/teaching/students"}/>}/>*/}
                 {/*<Route exact path={"/teaching/students"} element={<IDPO/>}/>*/}
                 {/*<Route exact path={"/teaching/teachers"} element={<IDPOTeaching/>}/>*/}

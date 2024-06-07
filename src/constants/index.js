@@ -62,31 +62,31 @@ export const mainNavigation = [
     {
         id: "0",
         title: "Home",
-        url: "/#top",
+        url: "./react.html#top",
         onlyMobile: false,
     },
     {
         id: "1",
         title: "About Me",
-        url: "/#knowledge",
+        url: "./react.html#knowledge",
         onlyMobile: false,
     },
     {
         id: "2",
         title: "Projects",
-        url: "/#project",
+        url: "./react.html#project",
         onlyMobile: false,
     },
     {
         id: "3",
         title: "Courses",
-        url: "/#courses",
+        url: "./react.html#courses",
         onlyMobile: false,
     },
     {
         id: "4",
         title: "Teaching",
-        url: "/#teaching",
+        url: "./react.html#teaching",
         onlyMobile: false,
     },
 ];
