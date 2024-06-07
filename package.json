@@ -2,7 +2,7 @@
   "name": "website-maybe",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://anormalperson8.github.io/anormalperson8.github.io/react/",
+  "homepage": "https://anormalperson8.github.io/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
