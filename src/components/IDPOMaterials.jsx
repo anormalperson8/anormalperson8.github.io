@@ -23,7 +23,7 @@ const IDPOMaterials = () => {
                     </h4>
                     <h6 className={"h6 mb-5"}>
                         These are materials used for HKUST's Future-Ready Scholars event held on 20th April and 4th May
-                        2024
+                        2024 <br/> for the course IDPO 2910: Undergraduate Teaching Opportunities.
                     </h6>
                     <h5 className={"tagline mb-5 text-center text-n-1/85"}>Download files below!</h5>
                 </div>
@@ -51,8 +51,10 @@ const IDPOMaterials = () => {
                     </p>
                     <br/>
                     <p>
-                        <b>4th June 2024</b><br/>
+                        <b>7th June 2024</b><br/>
                         The webpage has been updated! All materials, including the ones the instructors used are available down below!
+                        Due to hosting limitations, the file download links below will lead you to a separate page. Please find the corresponding item there!
+                        Sorry for any potential inconvenience caused.
                     </p>
                 </div>
                 <Heading className={"md:max-w-md lg:max-w-2xl text-center"} title={"Workshop Materials"}/>
@@ -64,8 +66,8 @@ const IDPOMaterials = () => {
                             <div className={"relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none"}>
                                 <h5 className={"h5 mb-5"}>{item.title}</h5>
                                 <p className={"body-2 mb-6 text-n-3 text-justify"}>{item.text}</p>
-                                <a className={"flex items-center mt-auto pointer-events-auto"} target="_blank"
-                                   rel="noopener noreferrer" href={item.link}>
+                                <a className={"flex items-center mt-auto pointer-events-auto"} //target="_blank"
+                                   rel="noopener noreferrer" href={"/pages/ustidpo.html"}>
                                     <img src={item.iconUrl} width={48} height={48} alt={item.title}/>
                                     <div
                                         className={"ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider"}>

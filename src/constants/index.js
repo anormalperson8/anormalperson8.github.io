@@ -434,7 +434,7 @@ export const projects = [
     {
         id: "3",
         title: "Personal Webpage",
-        text: "This webpage. Coded with ReactJS and Tailwind CSS.",
+        text: "This webpage. Coded with ReactJS and Tailwind CSS and HTML.",
         state: "(Creator)",
         backgroundUrl: card4,
         iconUrl: linkWhite,
