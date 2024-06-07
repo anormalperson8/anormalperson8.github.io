@@ -8,7 +8,7 @@ const Notification = ({className, title}) => {
             <div className={"flex items-center justify-between"}>
                 <ul className={"flex -m-0.5"}>
                 </ul>
-                <div className={"body-2 text-n-3"}>4th June, 2024</div>
+                <div className={"body-2 text-n-3"}>7th June, 2024</div>
             </div>
         </div>
     </div>
