@@ -227,7 +227,7 @@ export const selfInfo = [
     },
     {
         id:"3",
-        title: "I love food and puzzle games and learning about all kinds of trivia"
+        title: "I love food, puzzle games and learning about all kinds of trivia"
     }
 ]
 
