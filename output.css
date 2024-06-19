@@ -680,6 +680,14 @@ video {
   z-index: 2;
 }
 
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -735,12 +743,20 @@ video {
   margin-bottom: 8rem;
 }
 
+.mb-7 {
+  margin-bottom: 1.75rem;
+}
+
 .mb-96 {
   margin-bottom: 24rem;
 }
 
 .ml-5 {
   margin-left: 1.25rem;
+}
+
+.ml-auto {
+  margin-left: auto;
 }
 
 .mt-0 {
@@ -751,8 +767,16 @@ video {
   margin-top: 2.5rem;
 }
 
+.mt-24 {
+  margin-top: 6rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .mt-40 {
@@ -813,6 +837,10 @@ video {
 
 .table-fixed {
   table-layout: fixed;
+}
+
+.list-circle {
+  list-style-type: circle;
 }
 
 .list-disc {
@@ -890,6 +918,11 @@ video {
   padding-right: 1.25rem;
 }
 
+.px-\[15px\] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -927,6 +960,11 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-xl {
@@ -1050,6 +1088,11 @@ video {
     position: static;
   }
 
+  .lg\:mx-10 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
   .lg\:mx-80 {
     margin-left: 20rem;
     margin-right: 20rem;
@@ -1097,6 +1140,10 @@ video {
   .lg\:px-7\.5 {
     padding-left: 1.875rem;
     padding-right: 1.875rem;
+  }
+
+  .lg\:text-left {
+    text-align: left;
   }
 
   .lg\:text-n-1\/50 {
