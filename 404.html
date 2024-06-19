@@ -1,24 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>
-            Page does not exist.
-        </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            body {
-                font-family: "JetBrains Mono", sans-serif;
-                margin: 0;
-                background: cornsilk;
-                position: relative;
-            }
-        </style>
-    </head>
-    <body>
-        <p style="margin-left: 10px">
-            Page does not exist.<br>
-            Click <a style="text-decoration: none" href="javascript: history.back()">here</a> to return to previous page.
-        </p>
-    </body>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/images/waving.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunny's Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/output.css" rel="stylesheet"/>
+</head>
+<body class="min-h-screen bg-n-8">
+<div>
+    <div class="top-0 left-0 w-full border-b border-colour-7 lg:backdrop-blur-sm bg-n-8">
+        <div class="overflow-x-auto flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
+            <a class="lg:block w-[60px] xl:ml-2"><img src="./images/sunnylurking.png" alt="leftlurk"></a>
+            <nav class="invisible lg:visible overflow-x-auto relative left-0 right-0 bottom-0 bg-n-8 mx-auto">
+                <div class="lg:my-10 relative z-2 flex flex-col items-center justify-center space-x-20 m-auto lg:flex-row">
+                    <a href="/index.html" class="block relative font-code text-2xl uppercase transition-colors hover:text-colour-7 text-n-1/50">Home</a>
+                    <a href="/pages/aboutme.html" class="block relative font-code text-2xl uppercase transition-colors hover:text-colour-7 text-n-1/50">About Me</a>
+                    <a href="#" class="block relative font-code text-2xl uppercase transition-colors hover:text-colour-7 text-n-1/50">Projects</a>
+                    <a href="/pages/future-ready-scholars.html" class="block relative font-code text-2xl uppercase transition-colors hover:text-colour-7 text-n-1/50">Teaching</a>
+                </div>
+            </nav>
+            <a class="hidden lg:block w-[60px] xl:mr-2"><img src="./images/sunnylurkinginverted.png" alt="rightlurk"></a>
+        </div>
+    </div>
+</div>
+<div class="relative mx-auto bg-n-8">
+    <h4 class="h4 text-n-1 text-center mt-20 mb-5">
+        The page you tried to go to doesn't exist!
+    </h4>
+    <h6 class="h6 text-n-1 text-center">Click <a class="text-n-3 hover:text-n-2" href="javascript: history.back()">here</a> to go back to the previous page.<br>
+    Or, click one of the tabs above!</h6>
+    <div class="lg:block w-[120px] mt-6 mx-auto"><img src="/images/sunnycry.png" alt="cry"></div>
+</div>
+</body>
 </html>
