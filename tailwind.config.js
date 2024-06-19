@@ -2,15 +2,18 @@ import { fontFamily } from "tailwindcss/defaultTheme";
 import plugin from "tailwindcss/plugin";
 
 /* Source: https://github.com/adrianhajdin/brainwave/blob/main/tailwind.config.js */
-export default {
-  content: [
-      "./react.html",
-      "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+    content: [
+        "./index.html",
+        "./pages/*.html",
+        "./src/**/*.{js,ts}",
+    ],
     theme: {
         extend: {
             colors: {
-                color: {
+                colour: {
                     1: "#AC6AFF",
                     2: "#FFC876",
                     3: "#FF776F",
@@ -75,6 +78,9 @@ export default {
                 "conic-gradient":
                     "conic-gradient(from 225deg, #FFC876, #79FFF7, #9F53FF, #FF98E2, #FFC876)",
             },
+            boxShadow: {
+                "link": "3px 4px 4px",
+            }
         },
     },
     plugins: [
