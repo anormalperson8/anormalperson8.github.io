@@ -689,9 +689,19 @@ video {
   margin-right: 2.5rem;
 }
 
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .my-24 {
@@ -699,9 +709,18 @@ video {
   margin-bottom: 6rem;
 }
 
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .my-7 {
   margin-top: 1.75rem;
   margin-bottom: 1.75rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .mb-2 {
@@ -710,6 +729,10 @@ video {
 
 .mb-3 {
   margin-bottom: 0.75rem;
+}
+
+.mb-32 {
+  margin-bottom: 8rem;
 }
 
 .mb-96 {
@@ -742,6 +765,10 @@ video {
 
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .block {
@@ -786,6 +813,10 @@ video {
 
 .table-fixed {
   table-layout: fixed;
+}
+
+.list-disc {
+  list-style-type: disc;
 }
 
 .flex-col {
@@ -839,11 +870,6 @@ video {
   border-color: rgb(255 192 0 / var(--tw-border-opacity));
 }
 
-.border-n-7 {
-  --tw-border-opacity: 1;
-  border-color: rgb(21 19 29 / var(--tw-border-opacity));
-}
-
 .bg-n-8 {
   --tw-bg-opacity: 1;
   background-color: rgb(14 12 21 / var(--tw-bg-opacity));
@@ -854,6 +880,11 @@ video {
   padding-right: 0.5rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -862,6 +893,11 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pl-2 {
@@ -878,6 +914,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .font-code {
@@ -909,6 +949,10 @@ video {
 
 .text-n-1\/50 {
   color: rgb(255 255 255 / 0.5);
+}
+
+.text-n-1\/80 {
+  color: rgb(255 255 255 / 0.8);
 }
 
 .text-n-3 {
@@ -1016,6 +1060,15 @@ video {
     margin-right: auto;
   }
 
+  .lg\:my-10 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .lg\:mb-32 {
+    margin-bottom: 8rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -1048,6 +1101,10 @@ video {
 
   .lg\:text-n-1\/50 {
     color: rgb(255 255 255 / 0.5);
+  }
+
+  .lg\:text-n-1\/80 {
+    color: rgb(255 255 255 / 0.8);
   }
 
   .lg\:backdrop-blur-sm {
