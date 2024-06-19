@@ -743,6 +743,10 @@ video {
   margin-bottom: 8rem;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .mb-7 {
   margin-bottom: 1.75rem;
 }
@@ -1041,12 +1045,6 @@ video {
   color: rgb(202 198 221 / var(--tw-text-opacity));
 }
 
-.hover\:shadow-inner:hover {
-  --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
-  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .hover\:shadow-link:hover {
   --tw-shadow: 3px 4px 4px;
   --tw-shadow-colored: 3px 4px 4px var(--tw-shadow-color);
@@ -1055,11 +1053,6 @@ video {
 
 .hover\:shadow-colour-7:hover {
   --tw-shadow-color: #FFC000;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-.hover\:shadow-n-1:hover {
-  --tw-shadow-color: #FFFFFF;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
