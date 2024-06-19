@@ -81,6 +81,9 @@ module.exports = {
             boxShadow: {
                 "link": "3px 4px 4px",
             },
+            dropShadow: {
+                "social": "3px 4px 4px",
+            },
             listStyleType: {
                 square: "square",
                 circle: "circle"
