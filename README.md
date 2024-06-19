@@ -1,3 +1,5 @@
 # My webpage
 
-Currently in development, for the current deployed site, visit [this](https://github.com/anormalperson8/anormalperson8.github.io/tree/old-site) branch.
+This personal webpage is written in HTML with the Tailwind CSS library.
+
+Link: https://anormalperson8.github.io
