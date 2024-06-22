@@ -684,10 +684,6 @@ video {
   z-index: 2;
 }
 
-.float-right {
-  float: right;
-}
-
 .float-left {
   float: left;
 }
@@ -902,6 +898,10 @@ video {
 
 .border {
   border-width: 0.0625rem;
+}
+
+.border-2 {
+  border-width: 2px;
 }
 
 .border-4 {
@@ -1127,11 +1127,6 @@ video {
     margin-right: 5rem;
   }
 
-  .lg\:mx-80 {
-    margin-left: 20rem;
-    margin-right: 20rem;
-  }
-
   .lg\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -1198,6 +1193,11 @@ video {
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:mx-80 {
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+
   .\32xl\:mx-96 {
     margin-left: 24rem;
     margin-right: 24rem;
