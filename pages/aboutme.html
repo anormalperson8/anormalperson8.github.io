@@ -537,7 +537,7 @@
 </div>
 <div>
     <button class="!fixed bottom-5 end-5 hidden border border-colour-7 rounded-full bg-n-8 p-3 text-xs font-medium uppercase leading-tight text-n-1
-        shadow-md transition duration-150 ease-in-out hover:text-n-8 hover:bg-colour-7 hover:shadow-lg" id="topB">
+        shadow-md transition duration-150 ease-in-out lg:hover:text-n-8 lg:hover:bg-colour-7" id="topB">
         <span>top</span>
     </button>
 </div>
@@ -579,7 +579,6 @@
     // When the user clicks on the button, scroll to the top of the document
     myButton.addEventListener("click", () => {
         window.scrollTo({top: 0, behavior: "smooth"});
-        myButton.classList.remove("hover");
     });
 
     // When the user scrolls down 20px from the top of the document, show the button
