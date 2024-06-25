@@ -106,7 +106,114 @@
         </div>
 
         <h3 class="h3 mt-8">Selected Courses Taken at HKUST</h3>
-        <div class="border-4 border-colour-7 mx-10 lg:mx-20 2xl:mx-96 mt-5 mb-10 text-left">
+        <button class="button bg-n-8 text-n-1 py-2 px-2 text-center border border-colour-7 rounded-full my-2 hover:-translate-x-1
+        hover:-translate-y-1.5 hover:shadow-link hover:shadow-colour-7 hover:cursor-inherit hover:ease-in ease-out duration-200
+        active:translate-x-0 active:translate-y-0 active:shadow-none" id="showAll">
+            Show all semesters
+        </button>
+        <button class="button bg-n-8 text-n-1 py-2 px-2 text-center border border-colour-7 rounded-full my-2 hover:-translate-x-1
+        hover:-translate-y-1.5 hover:shadow-link hover:shadow-colour-7 hover:cursor-inherit hover:ease-in ease-out duration-200
+        active:translate-x-0 active:translate-y-0 active:shadow-none hidden" id="showCur">
+            Show current semester
+        </button>
+
+        <div class="border-4 border-colour-7 mx-10 lg:mx-20 2xl:mx-96 mt-5 mb-10 text-left" id="currentSem">
+            <ul class="mx-5 my-3">
+                <li><h6 class="relative border-2 border-colour-7 mb-3 h6 text-center px-2">Current semester - Spring 2024</h6></li>
+                <li class="mb-5">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between"><p>Operating Systems</p><p>COMP 3511</p></div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7"><p>Operating Systems (COMP 3511)</p></div>
+                    <div class="text-justify">
+                        <h6 class="h6">Course description:</h6>
+                        <p>
+                            Principles, purpose and structure of operating systems; processes, threads, and multi-threaded programming;
+                            CPU scheduling; synchronization, mutual exclusion; memory management and virtual memory; device management;
+                            file systems, security and protection.
+                        </p>
+                        <h6 class="h6">Comments:</h6>
+                        <p>
+                            This course introduced me to concurrent programming from a low-level perspective. The questions I've always had
+                            in my mind, e.g. "How does an OS work?", "When the CPU has multiple long tasks how are they dealt with?", are answered.
+                            It also provided me an opportunity to implement a (albeit subpar) shell with C.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Design and Analysis of Algorithms</p><p>COMP 3711</p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Design and Analysis of Algorithms (COMP 3711)</p>
+                    </div>
+                    <div class="text-justify">
+                        <h6 class="h6">Course description:</h6>
+                        <p>
+                            Techniques for designing algorithms, proving their correctness, and analyzing their running times.
+                            Topics covered include: sorting, selection, heaps, balanced search trees, divide-and-conquer, greedy algorithms,
+                            dynamic programming, and graph algorithms.
+                        </p>
+                        <h6 class="h6">Comments:</h6>
+                        <p>
+                            This course demystified what algorithm analysis is. While the course had more focus on the analysis
+                            part of algorithms, I learnt a lot about commonly-used algorithms, and which to apply depending on situations.
+                            I'm sure knowledge here will be useful in the future.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Introduction to Natural Language Processing</p><p>COMP 4221</p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Introduction to Natural Language Processing (COMP 4221)</p>
+                    </div>
+                    <div class="text-justify">
+                        <h6 class="h6">Course description:</h6>
+                        <p>
+                            This course provides an introduction to the tasks, models and algorithms of natural language
+                            processing (NLP) including the fundamental NLP tasks and models (such as language model, text classification,
+                            word vectors, sequence labelling, etc.), and several typical NLP applications (such as question answering,
+                            dialogue systems and machine translation, etc.), and the linguistic structure annotation
+                            (such as constituency parsing and dependency parsing).
+                            The course also introduces some advanced topics such as pre-trained language models and their
+                            prompt tuning and instruct tuning methods to give the students more perspectives of the NLP industry.
+                        </p>
+                        <h6 class="h6">Comments:</h6>
+                        <p>
+                            This is one of the first courses I took that dives in the fields of ML/Big Data Technologies.
+                            It introduces machine learning on spoken/text languages and context-based approaches to machine translation.
+                            I hope I will be able to apply knowledge acquired here to other ML courses in the future.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Undergraduate Teaching Opportunities</p><p>IDPO 2910</p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Undergraduate Teaching Opportunities (IDPO 2910)</p>
+                    </div>
+                    <div class="text-justify">
+                        <h6 class="h6">Course description:</h6>
+                        <p>
+                            This course aims to provide students with real-life, hands-on learning and teaching experience.
+                            Students will take part in lesson preparation, actual teaching and reflection session.
+                            Training on teaching skills and consultation with faculty will be provided to ensure the quality of students’ teaching.
+                        </p>
+                        <h6 class="h6">Comments:</h6>
+                        <p>
+                            This is a course that lets student gain experience on teaching actual secondary students with
+                            a topic of their choice. It helps with my  communication skills and how I can interpret/explain
+                            concepts and ideas, which is beneficial  from a soft-skill perspective.
+                            It was an interesting experience having to deal with requests from  multitude of stakeholders
+                            and balance them while ensuring lessons delivered were of good quality.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="border-4 border-colour-7 mx-10 lg:mx-20 2xl:mx-96 mt-5 mb-10 text-left hidden" id="allSem">
             <ul class="mx-5 my-3">
                 <li><h6 class="relative border-2 border-colour-7 mb-3 h6 text-center px-2">Fall 2022</h6></li>
                 <li class="mb-5">
@@ -402,7 +509,26 @@
     </div>
 </div>
 <div class="footer text-n-1 flex bg-n-8 border-t-2 border-colour-7 mt-80">
-    <p class="my-3 ml-2">Last updated: 23rd June 2024</p>
+    <p class="my-3 ml-2">Last updated: 25th June 2024</p>
 </div>
+<script>
+    const curSem = document.getElementById("currentSem");
+    const allS = document.getElementById("allSem");
+    const allButton = document.getElementById("showAll");
+    const curButton = document.getElementById("showCur");
+
+    allButton.addEventListener("click", () => {
+        curSem.classList.toggle("hidden");
+        allS.classList.toggle("hidden");
+        allButton.classList.toggle("hidden");
+        curButton.classList.toggle("hidden");
+    });
+    curButton.addEventListener("click", () => {
+        curSem.classList.toggle("hidden");
+        allS.classList.toggle("hidden");
+        allButton.classList.toggle("hidden");
+        curButton.classList.toggle("hidden");
+    });
+</script>
 </body>
 </html>
