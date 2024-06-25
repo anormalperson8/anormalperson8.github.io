@@ -6,7 +6,7 @@ import plugin from "tailwindcss/plugin";
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
-        "./index.html",
+        "./*.html",
         "./pages/*.html",
         "./src/**/*.{js,ts}",
     ],
