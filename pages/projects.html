@@ -160,6 +160,13 @@
         </div>
     </div>
 </div>
+<div>
+    <button class="!fixed bottom-5 end-5 hidden border border-colour-7 rounded-full bg-n-8 p-3 text-xs font-medium uppercase leading-tight text-n-1
+        shadow-md transition duration-150 ease-in-out hover:text-n-8 hover:bg-colour-7 hover:shadow-lg focus:bg-colour-7 focus:shadow-lg
+        focus:outline-none focus:ring-0 active:bg-colour-7 active:shadow-lg" id="topB">
+        <span>top</span>
+    </button>
+</div>
 <div class="footer text-n-1 flex bg-n-8 border-t-2 border-colour-7 mt-80">
     <p class="my-3 ml-2">Last updated: 26th June 2024</p>
 </div>
@@ -170,6 +177,20 @@
     burgButton.addEventListener("click", () => {
         burgMenu.classList.toggle("hidden");
     })
+</script>
+<script>
+    // https://tw-elements.com/docs/standard/components/scroll-back-to-top-button/
+    // Get the button
+    const myButton = document.getElementById("topB");
+
+    // When the user clicks on the button, scroll to the top of the document
+    myButton.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.addEventListener("scroll",
+        () => document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ?
+            myButton.classList.remove("hidden"): myButton.classList.add("hidden")
+    );
 </script>
 </body>
 </html>
