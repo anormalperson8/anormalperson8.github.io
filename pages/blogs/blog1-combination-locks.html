@@ -19,7 +19,7 @@
                     <a href="/pages/aboutme.html" class="block relative font-code text-lg uppercase transition-colors hover:text-colour-7 text-n-1/50">About Me</a>
                     <a href="/pages/projects.html" class="block relative font-code text-lg uppercase transition-colors hover:text-colour-7 text-n-1/50">Projects</a>
                     <a href="/pages/contacts.html" class="block relative font-code text-lg uppercase transition-colors hover:text-colour-7 text-n-1/50">Contacts</a>
-                    <a href="/pages/blogs/menu.html" class="block relative font-code text-lg uppercase transition-colors hover:text-colour-7 text-n-1/80">Blog</a>
+                    <a href="/pages/blogs/menu.html" class="block relative font-code text-lg uppercase transition-colors hover:text-colour-7 text-n-1/50">Blog</a>
                     <a href="/pages/future-ready-scholars/menu.html" class="block relative font-code text-lg uppercase transition-colors hover:text-colour-7 text-n-1/50">Teaching</a>
                 </div>
                 <div class="flex lg:hidden text-center">
@@ -57,36 +57,82 @@
     </div>
 </div>
 <div>
-    <div class="mx-auto">
-        <h1 class="h1 text-n-1 text-center mt-24">
-            Blog
-        </h1>
-        <h6 class="h6 text-n-1 text-center my-3">
-            Here are some random thoughts or things I find interesting that I'd like to share!
-        </h6>
-        <div class="mt-10 pb-40">
-            <div class="mx-10 lg:mx-20 2xl:mx-96 text-n-1 flex items-center justify-center mb-40">
-                <table class="text-left w-full">
-                    <thead>
-                        <tr>
-                            <th class="w-[27.5%] text-lg">Date</th>
-                            <th class="w-[5%]"></th>
-                            <th class="w-[67.5%] text-lg">Title</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>27th June 2024</th>
-                            <th></th>
-                            <th><a class="text-n-2 hover:text-colour-7" href="./blog1-combination-locks.html">Why do we call combination locks combination locks?</a></th>
-                        </tr>
-                    </tbody>
-                </table>
+    <div class="mx-10 lg:mx-20 2xl:mx-96">
+        <div class="flex justify-center items-center mt-10">
+            <div>
+                <a href="https://commons.wikimedia.org/wiki/File:3-combination_Master_padlock.jpg"><img width="512" alt="3-combination Master padlock" src="/images/blog/combination-lock.jpeg"></a>
             </div>
+        </div>
+        <div class="flex justify-center items-center text-center">
+            <p class="text-n-2 italic">
+                A 3-combination padlock of the Master Lock brand. <br>
+                ZooFari, Public domain, via Wikimedia Commons
+            </p>
+        </div>
+        <div class="border-b-2 border-colour-7 my-3">
+            <p class="text-n-1 text-xs">
+                27th June 2024
+            </p>
+            <h4 class="h4 text-n-1 text-left">
+                Why do we call combination locks combination locks?
+            </h4>
+        </div>
+        <div class="text-n-1 text-lg">
+            <p>
+                Combination locks are quite common in our lives. As I was taking a shower one day, I thought to myself:
+                Why are combination locks named combination locks, but not permutation locks? Let me first explain the
+                difference between combination and permutation.
+            </p>
+            <p class="mt-3">
+                Combination refers to a selection of items such that its order does not matter. A (hopefully easily-understandable)
+                example would be a basket of fruit holding 3 apples and 2 oranges. Let's say we want to pick 2 fruits from this basket.
+                If we do so, we can get:
+            </p>
+            <ul class="list-disc ml-8">
+                <li>2 apples; or</li>
+                <li>2 oranges; or</li>
+                <li>1 apple and orange each</li>
+            </ul>
+            <p class="mt-3">
+                This should be understandable. What I want to talk about though, is that to us, the order of selection does not matter.
+                Whether we get an apple or an orange first, if we end up with one of each, to us it's the same.
+                This also applies to the other outcomes. Let's say I marked the apples and oranges. If we get 2 apples,
+                we could get apple number 1 first, then apple number 2, or some other order.
+                In the end, it doesn't matter though since we only care that we got 2 apples.
+                As long as the end result contains the same items (same amount per type), they can be considered as
+                the same combination.
+            </p>
+            <p class="mt-3">
+                What about permutation? This may be a word you're not familiar with if you don't know much mathematics.
+                Permutations are very similar to combinations, except there's a clear difference: the ordering matters.
+                An example I like to use is spelling of English words. Let's say you're given the letters 'a', 'e' and 't'.
+                You can spell different words with them, for instance, the words "ate", "eat" and "tea". If this becomes
+                a bag of letters, you would think pulling out 'e', 'a', 't' and 't', 'e', 'a' (in the listed order) are
+                different scenarios. If we apply the concept of combination in them, then this would be untrue, as they're
+                essentially the same as getting an apple, orange and pear out of a fruit basket of many fruits.
+            </p>
+            <p class="mt-3">
+                Going back to combination locks, we all know that 123 and 321 are different passwords, as you cannot
+                unlock the combination lock with password 123 using 321. That is why, in my mind, combination locks
+                should be called permutation locks. The lock depends on a list of permutations. If the locks use
+                combinations, then the security of these locks would be significantly lower.
+            </p>
+            <p class="mt-3">
+                Will I start calling combination locks permutation locks now? No, not really. In English convention people
+                still refer to them as combination locks. I doubt if most would know/remember what permutation means,
+                and what I would be referring to if I utter the words "permutation lock" without prior context in a normal conversation.
+            </p>
+            <p class="mt-3">
+                Anyhow, this is just me writing down a shower thought that occurred randomly,
+                I hope you didn't find this detrimental to your brain cells.
+            </p>
+        </div>
+        <div class="text-n-1 border-t-2 border-colour-7 mt-3">
+            <p class="mt-1">You can return to menu <a href="./menu.html" class="text-n-3 hover:text-n-2">here</a>.</p>
         </div>
     </div>
     <div>
-        <img src="../../images/sunny.png" alt="sunny" class="mx-auto w-[120px] my-32">
+        <img src="../../images/sunny.png" alt="sunny" class="mx-auto w-[120px] mt-12 mb-32">
     </div>
 </div>
 <div>
