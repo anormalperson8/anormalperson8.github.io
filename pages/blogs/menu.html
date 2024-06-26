@@ -1,14 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/images/waving.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sunny's Website</title>
+    <title>HKUST Future-Ready Scholars</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="/output.css" rel="stylesheet"/>
 </head>
-<body class="min-h-screen bg-n-8">
+<body class="min-h-screen bg-n-8 opacity-100">
 <div>
     <div class="top-0 left-0 w-full border-b border-colour-7 lg:backdrop-blur-sm bg-n-8">
         <div class="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
@@ -19,11 +19,11 @@
                     <a href="/pages/aboutme.html" class="block relative font-code text-lg uppercase transition-colors hover:text-colour-7 text-n-1/50">About Me</a>
                     <a href="/pages/projects.html" class="block relative font-code text-lg uppercase transition-colors hover:text-colour-7 text-n-1/50">Projects</a>
                     <a href="/pages/contacts.html" class="block relative font-code text-lg uppercase transition-colors hover:text-colour-7 text-n-1/50">Contacts</a>
-                    <a href="/pages/blogs/menu.html" class="block relative font-code text-lg uppercase transition-colors hover:text-colour-7 text-n-1/50">Blog</a>
+                    <a href="/pages/blogs/menu.html" class="block relative font-code text-lg uppercase transition-colors hover:text-colour-7 text-n-1/80">Blog</a>
                     <a href="/pages/future-ready-scholars/menu.html" class="block relative font-code text-lg uppercase transition-colors hover:text-colour-7 text-n-1/50">Teaching</a>
                 </div>
                 <div class="flex lg:hidden text-center">
-                    <div class="absolute right-10 hidden w-60 border-colour-7 border-2 rounded-lg overflow-auto" id="navbarHamburger">
+                    <div class="absolute right-10 hidden w-60 border-colour-7 border-2 rounded-lg overflow-auto bg-n-8" id="navbarHamburger">
                         <ul class="flex flex-col font-medium">
                             <li>
                               <a href="/index.html" class="font-code uppercase block py-2 text-n-1 hover:text-n-8 bg-n-8 hover:bg-colour-7">Home</a>
@@ -45,8 +45,7 @@
                             </li>
                         </ul>
                     </div>
-                    <button id="burg" class="button inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg focus:outline-none border-2 border-n-8 hover:border-colour-7">
-                      <span class="sr-only">Open main menu</span>
+                    <button id="burg" class="button inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg focus:outline-none border-2 border-colour-7">
                       <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
                       </svg>
@@ -57,31 +56,30 @@
         </div>
     </div>
 </div>
-<div class="mx-auto bg-n-8">
-    <h4 class="h4 text-n-1 text-center mt-20 mb-5">
-        The page you tried to go to doesn't exist!
-    </h4>
-    <h6 class="hidden lg:block h6 text-n-1 text-center">Click <a class="text-n-3 hover:text-n-2" href="javascript: history.back()">here</a> to go back to the previous page.<br>
-    Or, click one of the tabs above!</h6>\
-    <div class="text-center lg:hidden">
-        <a href="javascript: history.back()"
-           class="button bg-n-8 text-n-1 font-bold py-4 px-4
-           inline-flex text-center border border-colour-7 rounded-full my-7
-           hover:-translate-x-1 hover:-translate-y-1.5 hover:shadow-link hover:shadow-colour-7 hover:cursor-inherit
-           hover:ease-in ease-out duration-200 active:translate-x-0 active:translate-y-0 active:shadow-none text-xl mt-1">
-           Previous Page
-        </a>
+<div>
+    <div class="mx-auto">
+        <h1 class="h1 text-n-1 text-center mt-24">
+            Blog
+        </h1>
+        <h6 class="h6 text-n-1 text-center">
+            Here are some random thoughts or things I find interesting that I'd like to share!
+        </h6>
+        <p class="text-n-1 text-center my-40">
+            Coming soon!
+        </p>
     </div>
-    <div class="text-center lg:hidden">
-        <a href="/index.html"
-           class="button bg-n-8 text-n-1 font-bold py-4 px-4
-           inline-flex text-center border border-colour-7 rounded-full my-7
-           hover:-translate-x-1 hover:-translate-y-1.5 hover:shadow-link hover:shadow-colour-7 hover:cursor-inherit
-           hover:ease-in ease-out duration-200 active:translate-x-0 active:translate-y-0 active:shadow-none text-xl mt-1">
-           Return to home
-        </a>
+    <div>
+        <img src="../../images/sunny.png" alt="sunny" class="mx-auto w-[120px] mb-32">
     </div>
-    <div class="lg:block w-[120px] mt-6 mx-auto"><img src="/images/sunnycry.png" alt="cry"></div>
+</div>
+<div>
+    <button class="!fixed bottom-8 end-8 hidden border border-colour-7 rounded-full bg-n-8 p-4 text-base font-medium uppercase leading-tight text-n-1
+        shadow-md transition duration-150 ease-in-out lg:hover:text-n-8 lg:hover:bg-colour-7" id="topB">
+        <span>top</span>
+    </button>
+</div>
+<div class="footer text-n-1 flex bg-n-8 border-t-2 border-colour-7 mt-80">
+    <p class="my-3 ml-2">Last updated: 26th June 2024</p>
 </div>
 <script>
     const burgButton = document.getElementById("burg");
@@ -91,5 +89,18 @@
         burgMenu.classList.toggle("hidden");
     })
 </script>
+<script>
+    // https://tw-elements.com/docs/standard/components/scroll-back-to-top-button/
+    // Get the button
+    const myButton = document.getElementById("topB");
+
+    // When the user clicks on the button, scroll to the top of the document
+    myButton.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.addEventListener("scroll",
+        () => document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ?
+            myButton.classList.remove("hidden"): myButton.classList.add("hidden")
+    );
+</script>
 </body>
-</html>
