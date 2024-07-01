@@ -635,6 +635,11 @@ video {
   line-height: 2rem;
 }
 
+.caption {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .button {
   font-family: var(--font-code);
   font-size: 0.75rem;
@@ -905,8 +910,20 @@ video {
   height: 1.25rem;
 }
 
+.h-\[10px\] {
+  height: 10px;
+}
+
 .h-\[116px\] {
   height: 116px;
+}
+
+.h-\[2px\] {
+  height: 2px;
+}
+
+.h-\[5px\] {
+  height: 5px;
 }
 
 .min-h-screen {
@@ -929,8 +946,8 @@ video {
   width: 120px;
 }
 
-.w-\[27\.5\%\] {
-  width: 27.5%;
+.w-\[25\%\] {
+  width: 25%;
 }
 
 .w-\[363px\] {
@@ -949,8 +966,8 @@ video {
   width: 60px;
 }
 
-.w-\[67\.5\%\] {
-  width: 67.5%;
+.w-\[70\%\] {
+  width: 70%;
 }
 
 .w-full {
