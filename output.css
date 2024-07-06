@@ -649,6 +649,14 @@ video {
   letter-spacing: 0.05em;
 }
 
+.notRecent {
+  display: block;
+}
+
+.recentHdr {
+  display: inline-block;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1107,6 +1115,10 @@ video {
 
 .pl-2 {
   padding-left: 0.5rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
 }
 
 .pr-4 {
