@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/images/waving.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunny's Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="../fontawesome-free-6.5.2-web/js/brands.js"></script>
+    <script defer src="../fontawesome-free-6.5.2-web/js/solid.js"></script>
+    <script defer src="../fontawesome-free-6.5.2-web/js/fontawesome.js"></script>
+    <link href="../fontawesome-free-6.5.2-web/svgs/solid/caret-down.svg">
+    <link href="../fontawesome-free-6.5.2-web/svgs/solid/caret-left.svg">
+    <link href="/output.css" rel="stylesheet"/>
+</head>
+<body class="min-h-screen bg-n-8">
+<div>
+    <div class="top-0 left-0 w-full border-b border-colour-7 lg:backdrop-blur-sm bg-n-8">
+        <div class="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
+            <a class="lg:block w-[60px] xl:ml-2" href="/index.html"><img src="/images/sunnylurking.png" alt="leftlurk"></a>
+            <nav class="relative left-0 right-0 bottom-0 bg-n-8 ml-auto lg:mx-auto">
+                <div class="hidden lg:inline-flex relative flex-col items-center justify-center space-x-20 m-auto lg:flex-row">
+                    <a href="/index.html" class="block relative font-code text-lg uppercase transition-colors hover:text-colour-7 text-n-1/50">Home</a>
+                    <a href="/pages/aboutme.html" class="block relative font-code text-lg uppercase transition-colors hover:text-colour-7 text-n-1/50">About Me</a>
+                    <a href="/pages/projects.html" class="block relative font-code text-lg uppercase transition-colors hover:text-colour-7 text-n-1/50">Projects</a>
+                    <a href="/pages/contacts.html" class="block relative font-code text-lg uppercase transition-colors hover:text-colour-7 text-n-1/50">Contacts</a>
+                    <a href="/pages/blogs/menu.html" class="block relative font-code text-lg uppercase transition-colors hover:text-colour-7 text-n-1/50">Blog</a>
+                    <a href="/pages/future-ready-scholars/menu.html" class="block relative font-code text-lg uppercase transition-colors hover:text-colour-7 text-n-1/50">Teaching</a>
+                </div>
+                <div class="flex lg:hidden text-center">
+                    <div class="absolute right-10 hidden w-60 border-colour-7 border-2 rounded-lg overflow-auto" id="navbarHamburger">
+                        <ul class="flex flex-col font-medium">
+                            <li>
+                              <a href="/index.html" class="font-code uppercase block py-2 text-n-1 hover:text-n-8 bg-n-8 hover:bg-colour-7">Home</a>
+                            </li>
+                            <li>
+                              <a href="/pages/aboutme.html" class="font-code uppercase block py-2 px-3 text-n-1 hover:text-n-8 bg-n-8 hover:bg-colour-7">About Me</a>
+                            </li>
+                            <li>
+                              <a href="/pages/projects.html" class="font-code uppercase block py-2 px-3 text-n-1 hover:text-n-8 bg-n-8 hover:bg-colour-7">Projects</a>
+                            </li>
+                            <li>
+                              <a href="/pages/contacts.html" class="font-code uppercase block py-2 px-3 text-n-1 hover:text-n-8 bg-n-8 hover:bg-colour-7">Contacts</a>
+                            </li>
+                            <li>
+                              <a href="/pages/blogs/menu.html" class="font-code uppercase block py-2 text-n-1 hover:text-n-8 bg-n-8 hover:bg-colour-7">Blog</a>
+                            </li>
+                            <li>
+                              <a href="/pages/future-ready-scholars/menu.html" class="font-code uppercase block py-2 text-n-1 hover:text-n-8 bg-n-8 hover:bg-colour-7">Teaching</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button id="burg" class="button inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg focus:outline-none border-2 border-colour-7">
+                      <span class="sr-only">Open main menu</span>
+                      <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                      </svg>
+                    </button>
+                </div>
+            </nav>
+            <a class="hidden lg:block w-[60px] xl:mr-2" href="/index.html"><img src="/images/sunnylurkinginverted.png" alt="rightlurk"></a>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="text-center text-n-1">
+        <h1 class="h1 mt-8">All Courses Taken at HKUST</h1>
+        <p class="my-2">Below are all courses I have taken at HKUST.</p>
+        <h3 class="h3 mt-12">Credit-Bearing Courses</h3>
+        <p class="my-2 text-sm">The credit of the courses are to the right of the course code.</p>
+        <button class="button bg-n-8 text-n-1 py-2 px-2 text-center border border-colour-7 rounded-full my-2 hover:-translate-x-1
+        hover:-translate-y-1.5 hover:shadow-link hover:shadow-colour-7 hover:cursor-inherit hover:ease-in ease-out duration-200
+        active:translate-x-0 active:translate-y-0 active:shadow-none" id="showAll">
+            Show all semesters
+        </button>
+        <button class="button bg-n-8 text-n-1 py-2 px-2 text-center border border-colour-7 rounded-full my-2 hover:-translate-x-1
+        hover:-translate-y-1.5 hover:shadow-link hover:shadow-colour-7 hover:cursor-inherit hover:ease-in ease-out duration-200
+        active:translate-x-0 active:translate-y-0 active:shadow-none hidden" id="collapseAll">
+            Collapse all semesters
+        </button>
+        <div class="border-4 border-colour-7 mx-10 lg:mx-20 2xl:mx-96 mt-5 mb-10 text-left">
+            <ul class="mx-5 my-3">
+                <li class="border-2 border-colour-7 justify-center text-center mb-3">
+                    <h6 class="h6 text-center px-2">Fall 2021 <a class="cursor-pointer f21Btn"><i class="fa-solid fa-caret-down"></i></a></h6>
+                </li>
+                <li class="mb-5 f21">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Introduction to Computer Science</p><p>COMP 1021<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Introduction to Computer Science (COMP 1021)<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="text-justify mb-2">
+                        <h6 class="h6">Course description:</h6>
+                        <p class="mb-1">
+                            This course introduces students to the world of Computer Science.
+                            Students will experience a range of fun and interesting areas from the world of computing,
+                            such as game programming, web programming, user interface design and computer graphics.
+                            These will be explored largely by programming in the Python language.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5 f21">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Cultures and Values: Freedom, Justice, and the Good</p><p>HUMA 1000E<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Cultures and Values: Freedom, Justice, and the Good (HUMA 1000E)<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="text-justify mb-2">
+                        <h6 class="h6">Course description:</h6>
+                        <p class="mb-1">
+                            This course focuses on conceptions of the "good life" and justice in relation to questions of human and environmental flourishing.
+                            We will consider issues such as the practices and values that are involved in a good life and a just society;
+                            whether ethics is universal or particular and what we owe our nations and humanity;
+                            the reality of conflict and how conflicts might be resolved or managed; the morality of human nature;
+                            environmental and animal ethics; the ethics of war and peace; utilitarian, deontological, virtue and existential ethics.
+                            These issues will allow students to reflect upon a range of values in both their personal and public lives involving the
+                            nature of goodness, rightness, justice and the common good in modern social-political conditions.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5 f21">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Calculus IB</p><p>MATH 1013<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Calculus IB (MATH 1013)<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="text-justify mb-2">
+                        <h6 class="h6">Course description:</h6>
+                        <p class="mb-1">
+                            This is an introductory course in one-variable calculus, the first in the Calculus I and II sequence,
+                            designed for students that have taken HKDSE Mathematics Extended Module M1/M2.
+                            Topics include functions and their limits, continuity, derivatives and rules of differentiation,
+                            applications of derivatives, and basic integral calculus.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5 f21">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>General Physics I with Calculus</p><p>PHYS 1112<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>General Physics I with Calculus (PHYS 1112)<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="text-justify mb-2">
+                        <h6 class="h6">Course description:</h6>
+                        <p class="mb-1">
+                            PHYS 1111 and PHYS 1112 target students who have learned the most basic knowledge in physics in high school.
+                            Students with more advanced physics background should consider taking PHYS 1312. PHYS 1112 employs a calculus-based approach. Students without knowledge of calculus should take PHYS 1111 instead. Key topics include motions and Newton’s Laws, work and energy, conservation of energy and momentum, rotation, rigid body, simple harmonic and damped oscillations, forced oscillations, standing waves and sound waves, kinetic theory and the laws of thermodynamics. For students under the 4-year degree only. Students without the physics prerequisite but have taken PHYS 1001 or equivalent, and/or without the mathematics prerequisite but have taken MATH 1012/ MATH 1013/ MATH 1020/ MATH 1023 or equivalent may seek instructor’s approval for enrolling in the course.
+                        </p>
+                    </div>
+                </li>
+                <li class="border-2 border-colour-7 justify-center text-center mb-3">
+                    <h6 class="h6 text-center px-2">Winter 2022 <a class="cursor-pointer w22Btn"><i class="fa-solid fa-caret-down"></i></a></h6>
+                </li>
+                <li class="mb-5 w22">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Social Media: Collective Intelligence & Creativity</p><p>ISOM 1090<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Social Media: Collective Intelligence & Creativity (ISOM 1090)<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="text-justify mb-2">
+                        <h6 class="h6">Course description:</h6>
+                        <p class="mb-1">
+                            This course provides an analysis of the power of social media, such as Facebook, twitter, blogs, mashups, wikis, etc.
+                            It examines how social media can facilitate creativity and collective intelligence,
+                            through enhanced information sharing and online collaboration among netizens; ultimately building the social pool of knowledge.
+                            It also examines the downside of this participatory culture.
+                        </p>
+                    </div>
+                </li>
+                <li class="border-2 border-colour-7 justify-center text-center mb-3">
+                    <h6 class="h6 text-center px-2">Spring 2022 <a class="cursor-pointer s22Btn"><i class="fa-solid fa-caret-down"></i></a></h6>
+                </li>
+                <li class="mb-5 s22">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>General Chemistry I</p><p>CHEM 1020<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>General Chemistry I (CHEM 1020)<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="text-justify mb-2">
+                        <h6 class="h6">Course description:</h6>
+                        <p class="mb-1">
+                            This course targets at students who have acquired more advanced knowledge in fundamental Chemistry in high school.
+                            Key topics include atomic structure and periodicity, bonding theories, chemical energy, and properties of gases,
+                            liquids and solids. Other topics such as chemical kinetics, chemical equilibrium and organic molecules will be briefly reviewed.
+                        </p>
+                        <h6 class="h6">Note:</h6>
+                        <p>
+                            This course has been renamed to <i>CHEM 1012 - General Chemistry B: Atomic Structure, Molecules, and Bonding Theories</i>
+                            in the academic year of 2024-2025.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5 s22">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Discovering Civil and Environmental Engineering</p><p>CIVL 1100<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Discovering Civil and Environmental Engineering (CIVL 1100)<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="text-justify mb-2">
+                        <h6 class="h6">Course description:</h6>
+                        <p class="mb-1">
+                            A general overview of civil and environmental engineering, infrastructure development and engineering ethics is provided.
+                            The course includes both lectures and laboratory sessions, where the laboratory sessions are primarily directed to students
+                            who require the development of feasible conceptual solutions for the analysis and design of the basic problems in structural,
+                            geotechnical and environmental engineering.
+                            For first year engineering students under the four‐year degree curriculum only.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5 s22">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Exploring Multimedia and Internet Computing</p><p>COMP 1001<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Exploring Multimedia and Internet Computing (COMP 1001)<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="text-justify mb-2">
+                        <h6 class="h6">Course description:</h6>
+                        <p class="mb-1">
+                            This course is an introduction to computers and computing tools.
+                            It introduces the organization and basic working mechanism of a computer system,
+                            including the development of the trend of modern computer system.
+                            It covers the fundamentals of computer hardware design and software application development.
+                            The course emphasizes the application of the state-of-the-art software tools to solve problems
+                            and present solutions via a range of skills related to multimedia and internet computing tools such as internet,
+                            e-mail, WWW, webpage design, computer animation, spreadsheet charts/figures, presentations with graphics and animations, etc.
+                            The course also covers business, accessibility, and relevant security issues in the use of computers and Internet.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5 s22">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Technical Communication I</p><p>LANG 2030H<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Technical Communication I (LANG 2030H)<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="text-justify mb-2">
+                        <h6 class="h6">Course description:</h6>
+                        <p class="mb-1">
+                            The course provides students with a broad introduction to English within the discipline of engineering.
+                            A central aim of the course is to encourage students to analyze critically the wider social implications
+                            of engineering products and processes, through the careful examination of texts (and other media) beyond
+                            their own specific engineering field and to communicate effectively by delivering oral presentations and
+                            writing reports on topics relevant to all engineers.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5 s22">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Calculus II</p><p>MATH 1014<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Calculus II (MATH 1014)<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="text-justify mb-2">
+                        <h6 class="h6">Course description:</h6>
+                        <p class="mb-1">
+                            This is an introductory course in one-variable calculus, the second in the MATH 1013 – MATH 1014 sequence.
+                            Topics include applications of definite integral, improper integrals, vectors, curves and parametric equations,
+                            modeling with differential equations, solving simple differential equations, infinite sequences and series,
+                            power series and Taylor series.
+                        </p>
+                    </div>
+                </li>
+                <li class="border-2 border-colour-7 justify-center text-center mb-3">
+                    <h6 class="h6 text-center px-2">Summer 2022 <a class="cursor-pointer su22Btn"><i class="fa-solid fa-caret-down"></i></a></h6>
+                </li>
+                <li class="mb-5 su22">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>C Programming Bridging Course</p><p>COMP 1029C<span class="text-xs">&nbsp;(1)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>C Programming Bridging Course (COMP 1029C)<span class="text-xs">&nbsp;(1)</span></p>
+                    </div>
+                    <div class="text-justify mb-2">
+                        <h6 class="h6">Course description:</h6>
+                        <p class="mb-1">
+                            This course introduces the C programming language.
+                            It is intended for students who already have some experience in computer programming but wish to
+                            learn how to apply those programming skills to the C language.
+                            The course covers basic programming topics, such as variables, control, loops, and functions, to more advanced topics.
+                            Students explore these by self-learning of course materials together with guided programming exercises.
+                            Students without the prerequisites but possess relevant programming knowledge may seek instructor's approval
+                            for enrolling in the course. Graded P or F.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5 su22">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Java Programming Bridging Course</p><p>COMP 1029J<span class="text-xs">&nbsp;(1)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Java Programming Bridging Course (COMP 1029J)<span class="text-xs">&nbsp;(1)</span></p>
+                    </div>
+                    <div class="text-justify mb-2">
+                        <h6 class="h6">Course description:</h6>
+                        <p class="mb-1">
+                            This course introduces the Java programming language.
+                            It is intended for students who already have some experience in computer programming but wish to
+                            learn how to apply those programming skills to the Java language.
+                            The course covers basic programming topics such as variables, control statements, loops, functions,
+                            and object-oriented programming concepts.
+                            Students explore these by self-learning of course materials together with guided programming exercises.
+                            Students without the prerequisites but possess relevant programming knowledge may seek instructor's approval
+                            for enrolling in the course. Graded P or F.
+                        </p>
+                    </div>
+                </li>
+                <li class="border-2 border-colour-7 justify-center text-center mb-3">
+                    <h6 class="h6 text-center px-2">Fall 2022 <a class="cursor-pointer f22Btn"><i class="fa-solid fa-caret-down"></i></a></h6>
+                </li>
+                <li class="mb-5 f22">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Programming with C++</p><p>COMP 2011<span class="text-xs">&nbsp;(4)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Programming with C++ (COMP 2011)<span class="text-xs">&nbsp;(4)</span></p>
+                    </div>
+                    <div class="text-justify mb-2">
+                        <h6 class="h6">Course description:</h6>
+                        <p class="mb-1">
+                            This course covers programming and data structures using C++.
+                            In addition to basic programming concepts such as variables and control statements,
+                            students will learn about arrays, pointers, dynamic data allocation, linked lists, stacks,
+                            queues, binary trees, recursion, and the basics of object oriented programming.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5 f22">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Introduction to Electro-Robot Design</p><p>ELEC 1100<span class="text-xs">&nbsp;(4)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Introduction to Electro-Robot Design (ELEC 1100)<span class="text-xs">&nbsp;(4)</span></p>
+                    </div>
+                    <div class="text-justify mb-2">
+                        <h6 class="h6">Course description:</h6>
+                        <p class="mb-1">
+                            The course introduces the fundamental knowledge on the design, implementation and evaluation of a robot and its sub-systems.
+                            It covers the basic principles of analog and digital circuits as well as robot sensing and control mechanisms.
+                            Students have to apply the knowledge and principles learned to design and build a functional robot by the end of the course.
+                            Students who have completed ELEC 2200, ELEC 2350, ELEC 2400, ELEC 2420, or ELEC 3310,
+                            must obtain instructor's approval to take this course.
+                        </p>
+                        <h6 class="h6">Note:</h6>
+                        <p>
+                            ELEC 2200: Digital Circuits and Systems (Removed Course)<br>
+                            ELEC 2350: Introduction to Computer Organization and Design<br>
+                            ELEC 2400: Electronic Circuits<br>
+                            ELEC 2420: Basic Electronics<br>
+                            ELEC 3310: Digital Fundamentals and System Design<br>
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5 f22">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>A System View of Communications: from Signals to Packets</p><p>ELEC 1200<span class="text-xs">&nbsp;(4)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>A System View of Communications: from Signals to Packets (ELEC 1200)<span class="text-xs">&nbsp;(4)</span></p>
+                    </div>
+                    <div class="text-justify mb-2">
+                        <h6 class="h6">Course description:</h6>
+                        <p class="mb-1">
+                            Have you ever wondered what technologies go into your mobile phone or a WiFi hotspot?
+                            Through hands on work with a simple but fully functional wireless communication system,
+                            you will understand the basic engineering tools used and tradeoffs encountered in the design of these systems.
+                            This course is centered on weekly laboratories, each designed to introduce an important concept in the design of these systems.
+                            The lab sessions are supported by two one-hour lectures and a tutorial that introduce the concepts for the next laboratory,
+                            as well as reviewing and expanding the concepts learned in the previous laboratory.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5 f22">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Introduction to Multivariable Calculus</p><p>MATH 2011<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Introduction to Multivariable Calculus (MATH 2011)<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="text-justify mb-2">
+                        <h6 class="h6">Course description:</h6>
+                        <p class="mb-1">
+                            Differentiation in several variables, with applications in approximation, maximum and minimum and geometry.
+                            Integration in several variables, vector analysis.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5 f22">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>General Physics II</p><p>PHYS 1114<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>General Physics II (PHYS 1114)<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="text-justify mb-2">
+                        <h6 class="h6">Course description:</h6>
+                        <p class="mb-1">
+                            This course targets students who have learned the most basic knowledge in physics in high school.
+                            Students with more advanced physics background should consider taking PHYS 1314.
+                            This course employs a calculus‐based approach. Key topics include Coulomb's law, electric field and potential,
+                            Gauss' law, capacitance, circuits, magnetic force and field, Ampere's law, electromagnetic induction,
+                            AC circuit, Maxwell's equations, electromagnetic waves, wave optics, interference and diffraction.
+                        </p>
+                    </div>
+                </li>
+                <li class="border-2 border-colour-7 justify-center text-center mb-3">
+                    <h6 class="h6 text-center px-2">Winter 2023 <a class="cursor-pointer w23Btn"><i class="fa-solid fa-caret-down"></i></a></h6>
+                </li>
+                <li class="mb-5 w23">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Excel VBA Programming Bridging Course</p><p>COMP 1029V<span class="text-xs">&nbsp;(1)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Excel VBA Programming Bridging Course (COMP 1029V)<span class="text-xs">&nbsp;(1)</span></p>
+                    </div>
+                    <div class="text-justify mb-2">
+                        <h6 class="h6">Course description:</h6>
+                        <p class="mb-1">
+                            This course introduces the VBA programming language, in the context of Microsoft Excel.
+                            It is intended for students who already have some experience in computer programming but wish to
+                            learn how to apply those programming skills to VBA, within Excel. The course covers basic programming topics,
+                            such as variables, functions and loops, to more advanced topics.
+                            Appropriate features of the Excel program are also covered.
+                            Students explore these by self-learning of course materials together with guided programming exercises.
+                            Students without the prerequisites but possess relevant programming knowledge may seek instructor's approval
+                            for enrolling in the course. Graded P or F.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5 w23">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Technology and Innovation: Social and Business Perspectives</p><p>ISOM 1380<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Technology and Innovation: Social and Business Perspectives (ISOM 1380)<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="text-justify mb-2">
+                        <h6 class="h6">Course description:</h6>
+                        <p class="mb-1">
+                            This course describes the development of technology and innovation from social and business perspectives.
+                            It covers the technology side of innovations, how an invention can be developed into a successful commercial product,
+                            the role of innovation in society and how innovations are created from a socioeconomic perspective.
+                            It highlights that successful development and adoption of innovative products relies not only on the technology itself
+                            but also a complex process that is subject to the impact of cultural, political, economic and managerial factors.
+                        </p>
+                    </div>
+                </li>
+                <li class="border-2 border-colour-7 justify-center text-center mb-3">
+                    <h6 class="h6 text-center px-2">Spring 2023 <a class="cursor-pointer s23Btn"><i class="fa-solid fa-caret-down"></i></a></h6>
+                </li>
+                <li class="mb-5 s23">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Object-Oriented Programming and Data Structures</p><p>COMP 2012<span class="text-xs">&nbsp;(4)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Object-Oriented Programming and Data Structures (COMP 2012)<span class="text-xs">&nbsp;(4)</span></p>
+                    </div>
+                    <div class="text-justify mb-2">
+                        <h6 class="h6">Course description:</h6>
+                        <p class="mb-1">
+                            To learn the fundamental concepts and techniques behind object-oriented programming.
+                            They include: abstract data types; creation, initialization, and destruction of objects; class hierarchies;
+                            polymorphism, inheritance and dynamic binding; generic programming using templates.
+                            To learn the object-oriented view of data structures: linked lists, stacks, queues, binary trees,
+                            and algorithms such as searching and hashing.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5 s23">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Discrete Mathematical Tools for Computer Science</p><p>COMP 2711<span class="text-xs">&nbsp;(4)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Discrete Mathematical Tools for Computer Science (COMP 2711)<span class="text-xs">&nbsp;(4)</span></p>
+                    </div>
+                    <div class="text-justify mb-2">
+                        <h6 class="h6">Course description:</h6>
+                        <p class="mb-1">
+                            Basic concepts in discrete mathematics needed for the study of computer science: enumeration techniques,
+                            basic number theory, logic and proofs, recursion and recurrences, probability theory and graph theory.
+                            The approach of this course is specifically computer science application oriented.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5 s23">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Electronic and Information Technology</p><p>CORE 1240/ELEC 1010<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Electronic and Information Technology (CORE 1240/ELEC 1010)<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="text-justify mb-2">
+                        <h6 class="h6">Course description:</h6>
+                        <p class="mb-1">
+                            This general-education course introduces the basics of electronic and information technology
+                            and their applications to daily-life consumer electronics and communication devices.
+                            Contents include the representation of signals in the time and frequency domains;
+                            digitization of information; coding for data compression and error protection; transmission of signals;
+                            cellular mobile phones and wireless communications; and the Internet.
+                            It is expected that through studying these technologies and how they address the problems encountered
+                            in the information technology area, students will also grasp the skills in solving problems with engineering
+                            approach and spirit and appreciate how these technologies impact the society.
+                        </p>
+                        <h6 class="h6">Note:</h6>
+                        <p>
+                            Due to a temporary change in the HKUST Common Core system, this course was coded CORE 1240 in that semester,
+                            which is what is listed in official records.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5 s23">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Electronic Circuits</p><p>ELEC 2400<span class="text-xs">&nbsp;(4)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Electronic Circuits (ELEC 2400)<span class="text-xs">&nbsp;(4)</span></p>
+                    </div>
+                    <div class="text-justify mb-2">
+                        <h6 class="h6">Course description:</h6>
+                        <p class="mb-1">
+                            Fundamental electronic concepts for DC and AC circuits, KVL and KCL, Thevenin and Norton Theroems,
+                            linearity and superposition, nodal and mesh analyses, sinusoidal steady state and phasor,
+                            transient analysis, transfer functions and Bode plots, op-amps, diodes, MOS transistors and related circuits.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5 s23">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Matrix Algebra and Applications</p><p>MATH 2111<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Matrix Algebra and Applications (MATH 2111)<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="text-justify mb-2">
+                        <h6 class="h6">Course description:</h6>
+                        <p class="mb-1">
+                            Systems of linear equations; vector spaces; linear transformations;
+                            matrix representation of linear transformations; linear operators, eigenvalues and eigenvectors;
+                            similarity invariants and canonical forms.
+                        </p>
+                    </div>
+                </li>
+                <li class="border-2 border-colour-7 justify-center text-center mb-3">
+                    <h6 class="h6 text-center px-2">Summer 2023 <a class="cursor-pointer su23Btn"><i class="fa-solid fa-caret-down"></i></a></h6>
+                </li>
+                <li class="mb-5 su23">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Applied Statistics</p><p>MATH 2411<span class="text-xs">&nbsp;(4)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Applied Statistics (MATH 2411)<span class="text-xs">&nbsp;(4)</span></p>
+                    </div>
+                    <div class="text-justify mb-2">
+                        <h6 class="h6">Course description:</h6>
+                        <p class="mb-1">
+                            A systematic introduction to statistical inference, including the necessary probabilistic background,
+                            point and interval estimation, hypothesis testing.
+                        </p>
+                    </div>
+                </li>
+                <li class="border-2 border-colour-7 justify-center text-center mb-3">
+                    <h6 class="h6 text-center px-2">Fall 2023  <a class="cursor-pointer f23Btn"><i class="fa-solid fa-caret-down"></i></a></h6>
+                </li>
+                <li class="mb-5 f23">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Exploring Artificial Intelligence</p><p>COMP 2211<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Exploring Artificial Intelligence (COMP 2211)<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="text-justify">
+                        <h6 class="h6">Course description:</h6>
+                        <p>
+                            This course aims to give a gentle introduction to the basic elements of artificial intelligence (AI)
+                            through understanding examples from various applications and hands-on experimentation using AI software tools.
+                            In addition to covering the technical aspect of AI through such topics as search and problem-solving,
+                            knowledge representation, probabilistic reasoning, machine learning, computer vision and image processing,
+                            speech and language processing, and robotics, this course will also study the historical perspective,
+                            social and ethical implications, as well as potential and limitations of AI.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5 f23">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Computer Organization</p><p>COMP 2611<span class="text-xs">&nbsp;(4)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Computer Organization (COMP 2611)<span class="text-xs">&nbsp;(4)</span></p>
+                    </div>
+                    <div class="text-justify">
+                        <h6 class="h6">Course description:</h6>
+                        <p>
+                            Inner workings of modern digital computer systems and tradeoffs at the hardware-software interface.
+                            Topics include: instructions set design, memory systems, input-output systems, interrupts and exceptions,
+                            pipelining, performance and cost analysis, assembly language programming, and a survey of advanced architectures.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5 f23">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Java Programming</p><p>COMP 3021<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Java Programming (COMP 3021)<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="text-justify">
+                        <h6 class="h6">Course description:</h6>
+                        <p>
+                            Introduction to Java programming. Fundamentals include language syntax, object-oriented programming,
+                            inheritance, polymorphism, exception handling, multithreading and lambdas. Standard libraries for input/output,
+                            graphics programming, built-in data structures. Programming for events, generics and higher-order functions.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5 f23">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Honors Software Engineering</p><p>COMP 3111H<span class="text-xs">&nbsp;(4)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Honors Software Engineering (COMP 3111H)<span class="text-xs">&nbsp;(4)</span></p>
+                    </div>
+                    <div class="text-justify">
+                        <h6 class="h6">Course description:</h6>
+                        <p>
+                            General methodologies, techniques, and tools for planning, designing, implementing, validating,
+                            and maintaining large-scale software systems. Collaborative development environment, automatic static analysis,
+                            and testing techniques. Open source project development methodologies and techniques.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5 f23">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Principles of Cybersecurity</p><p>COMP 3632<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Principles of Cybersecurity (COMP 3632)<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="text-justify">
+                        <h6 class="h6">Course description:</h6>
+                        <p>
+                            This course is an introduction to the principles of cybersecurity.
+                            Cybersecurity, also called computer security or IT security,
+                            refers to the study of techniques to protect computing systems from attacks that threaten data confidentiality,
+                            system integrity and availability. By modeling, analyzing, and evaluating the security of computer systems,
+                            students will learn to find weaknesses in software, hardware, networks, data storage systems,
+                            mobile applications, and the Internet, and identify current security practices and defenses to protect these systems.
+                        </p>
+                        <h6 class="h6">Note:</h6>
+                        <p>
+                            This course has been renamed to <i>COMP 4634 - Cybersecurity</i> in the academic year of 2024-2025.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5 f23">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Introduction to Chinese Painting</p><p>HUMA 2660<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Introduction to Chinese Painting (HUMA 2660)<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="text-justify">
+                        <h6 class="h6">Course description:</h6>
+                        <p>
+                            A survey of major monuments, schools and theories from earliest times to the twentieth century,
+                            with an introduction to the problems of connoisseurship in Chinese painting.
+                        </p>
+                    </div>
+                </li>
+                <li class="border-2 border-colour-7 justify-center text-center mb-3">
+                    <h6 class="h6 text-center px-2">Spring 2024 <a class="cursor-pointer s24Btn"><i class="fa-solid fa-caret-down"></i></a></h6>
+                </li>
+                <li class="mb-5 s24">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Operating Systems</p><p>COMP 3511<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Operating Systems (COMP 3511)<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="text-justify">
+                        <h6 class="h6">Course description:</h6>
+                        <p>
+                            Principles, purpose and structure of operating systems; processes, threads, and multi-threaded programming;
+                            CPU scheduling; synchronization, mutual exclusion; memory management and virtual memory; device management;
+                            file systems, security and protection.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5 s24">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Design and Analysis of Algorithms</p><p>COMP 3711<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Design and Analysis of Algorithms (COMP 3711)<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="text-justify">
+                        <h6 class="h6">Course description:</h6>
+                        <p>
+                            Techniques for designing algorithms, proving their correctness, and analyzing their running times.
+                            Topics covered include: sorting, selection, heaps, balanced search trees, divide-and-conquer, greedy algorithms,
+                            dynamic programming, and graph algorithms.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5 s24">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Introduction to Natural Language Processing</p><p>COMP 4221<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Introduction to Natural Language Processing (COMP 4221)<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="text-justify">
+                        <h6 class="h6">Course description:</h6>
+                        <p>
+                            This course provides an introduction to the tasks, models and algorithms of natural language
+                            processing (NLP) including the fundamental NLP tasks and models (such as language model, text classification,
+                            word vectors, sequence labelling, etc.), and several typical NLP applications (such as question answering,
+                            dialogue systems and machine translation, etc.), and the linguistic structure annotation
+                            (such as constituency parsing and dependency parsing).
+                            The course also introduces some advanced topics such as pre-trained language models and their
+                            prompt tuning and instruct tuning methods to give the students more perspectives of the NLP industry.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5 s24">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>The Art of Thinking in the Hong Kong Context</p><p>HUMA 1710<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>The Art of Thinking in the Hong Kong Context (HUMA 1710)<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="text-justify">
+                        <h6 class="h6">Course description:</h6>
+                        <p>
+                            This course aims to provide a basic introduction to the art of thinking.
+                            The focus of this course is on methodology.
+                            Students will be equipped with critical tools for the analysis of arguments.
+                            Moreover, special attention will be given to the application of such tools to the practical affairs of everyday life.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5 s24">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Metaphors in English and Chinese</p><p>HUMA 2010<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Metaphors in English and Chinese (HUMA 2010)<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="text-justify">
+                        <h6 class="h6">Course description:</h6>
+                        <p>
+                            A comprehensive study of metaphors in English and Chinese, not only as a rhetorical device,
+                            but also as an essential tool of our ordinary language and thought.
+                            The course encompasses a wide range of diverse topics such as literary metaphors,
+                            metaphors in everyday language (about time, life, change, quantity, love, anger, etc.),
+                            and metaphors in politics, mathematics, physics, artificial intelligence, and cyberspace.
+                            The approach is interdisciplinary and comparative, and most topics are to be discussed from
+                            a cross-linguistic and cross-cultural perspective.
+                            An ordinary reading knowledge of Chinese is required for enrollment.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5 s24">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Language, Power and Identity</p><p>HUMA 2032<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Language, Power and Identity (HUMA 2032)<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="text-justify">
+                        <h6 class="h6">Course description:</h6>
+                        <p>
+                            This course aims to stimulate students’ thinking around the complex notion of ‘identity’,
+                            challenging classic sociolinguistic and sociological approaches and introducing poststructuralist approaches.
+                            The language of individuals and/or institutions will be analysed in depth, with reference to critical theories of society,
+                            ideology and discourse. The course also aims to raise awareness of how language is used to create and maintain power through narratives of identity.
+                            Case studies will be presented, with a view to deconstructionist analysis on the role of language in producing and reproducing ostensibly stable ‘identities’ along binary lines such as masculine/feminine, Western/Asian and straight/queer.
+                            The course also investigates how humans perform other types of social difference and belonging such as ethnicity and social class.
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5 s24">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Undergraduate Teaching Opportunities</p><p>IDPO 2910<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Undergraduate Teaching Opportunities (IDPO 2910)<span class="text-xs">&nbsp;(3)</span></p>
+                    </div>
+                    <div class="text-justify">
+                        <h6 class="h6">Course description:</h6>
+                        <p>
+                            This course aims to provide students with real-life, hands-on learning and teaching experience.
+                            Students will take part in lesson preparation, actual teaching and reflection session.
+                            Training on teaching skills and consultation with faculty will be provided to ensure the quality of students’ teaching.
+                        </p>
+                    </div>
+                </li>
+                <li class="border-2 border-colour-7 justify-center text-center mb-3">
+                    <h6 class="h6 text-center px-2">Summer 2024 <a class="cursor-pointer su24Btn"><i class="fa-solid fa-caret-down"></i></a></h6>
+                </li>
+                <li class="mb-5 su24">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Computer Engineering Final Year Project in COMP</p><p>CPEG 4901<span class="text-xs">&nbsp;(6)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Computer Engineering Final Year Project in COMP (CPEG 4901)<span class="text-xs">&nbsp;(6)</span></p>
+                    </div>
+                    <div class="text-justify">
+                        <h6 class="h6">Course description:</h6>
+                        <p>
+                            Each student of the Computer Engineering program is required to complete a final year project before graduation.
+                            The student is expected to conduct a project on a topic related to Computer Engineering and/or its application.
+                            The project is guided and conducted under the supervision of faculty members from the Department of Computer Science and Engineering.
+                            Credit load will be spread over the year. Instructor's approval is required for enrollment in the course.
+                            For CPEG students only.
+                        </p>
+                        <h6 class="h6">Note:</h6>
+                        <p>
+                            The credit load is spread into 3 parts: 1 in Year-3 Summer, 2 in Year-4 Fall and 3 in Year-4 Spring.<br>
+                            Hence the credit load is 1 credit in summer 2024.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <h3 class="h3 mt-12">Other Courses</h3>
+        <p class="my-2 text-sm">These are courses taken that do not bear credits, i.e. 0 credits.</p>
+        <div class="border-4 border-colour-7 mx-10 lg:mx-20 2xl:mx-96 mt-5 mb-10 text-left">
+            <ul class="mx-5 my-3">
+                <li class="mb-5">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Industrial Experience</p><p>CPEG 1971</p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Industrial Experience (CPEG 1971)</p>
+                    </div>
+                    <div class="text-justify">
+                        <h6 class="h6">Course description:</h6>
+                        <p>
+                            Full-time internship training for a period of at least six weeks in an organization or company recognized by
+                            the Program for providing qualified internship training relevant to the computer engineering profession.
+                            Separately, students must also complete the 1-day Safety Training module.
+                            Cantonese or other working languages may be used in off-campus trainings and internships, in some situations.
+                            For students in the BEng in Computer Engineering program under the four-year degree only.
+                            Internship coordinator's approval is required for enrollment in the course. Graded P, PP or F.
+                        </p>
+                        <h6 class="h6">Semesters:</h6>
+                        <p>
+                            2023 Spring, 2023 Fall and 2024 Spring
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Academic and Professional Development I</p><p>CPEG 2930</p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Academic and Professional Development I (CPEG 2930)</p>
+                    </div>
+                    <div class="text-justify">
+                        <h6 class="h6">Course description:</h6>
+                        <p>
+                            A compulsory, one year course for Computer Engineering students only.
+                            This course is intended to offer advice to students on academic and professional matters,
+                            and to improve the students' communication skills.
+                            This will be achieved through:
+                            (1) Small student group meetings with an assigned advisor;
+                            (2) Professional and academic seminars, and
+                            (3) Social activities.
+                            Graded P or F.
+                        </p>
+                        <h6 class="h6">Semesters:</h6>
+                        <p>
+                            2022 Fall and 2023 Spring
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Academic and Professional Development II</p><p>CPEG 3930</p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Academic and Professional Development II (CPEG 3930)</p>
+                    </div>
+                    <div class="text-justify">
+                        <h6 class="h6">Course description:</h6>
+                        <p>
+                            Continuation of CPEG 2930.
+                            This is a compulsory, one year course for Computer Engineering students only.
+                            Graded P or F.
+                        </p>
+                        <h6 class="h6">Semesters:</h6>
+                        <p>
+                            2023 Fall and 2024 Spring
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Academic Orientation</p><p>ENGG 1010</p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Academic Orientation (ENGG 1010)</p>
+                    </div>
+                    <div class="text-justify">
+                        <h6 class="h6">Course description:</h6>
+                        <p>
+                            This course is designed specifically for engineering students of the First Year of 4Y curriculum.
+                            This year-long course aims at providing an induction to the School of Engineering for the freshmen year.
+                            It will cover topics such as learning and time-management skills, purposes of university and engineering education,
+                            and planning for personal and professional development.
+                            Graded PP, P or F. For Year 1 Engineering students only.
+                        </p>
+                        <h6 class="h6">Semesters:</h6>
+                        <p>
+                            2021 Fall and 2022 Spring
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Engineering Seminar Series</p><p>ENGG 2010</p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Engineering Seminar Series (ENGG 2010)</p>
+                    </div>
+                    <div class="text-justify">
+                        <h6 class="h6">Course description:</h6>
+                        <p>
+                            This course is designed for non-freshman students in the School of Engineering to
+                            promote the awareness of the role of engineers and the impact of engineering in the society.
+                            As a continuation of ENGG 1010, students are required to attend a few seminars from a series of seminars
+                            offered by the school each year. The seminars cover areas including the ethical and environmental responsibilities as an engineer,
+                            the importance and the considerations of safety and health related issues in engineering designs and solutions,
+                            and in general the impact of engineering to the society.
+                            This course helps to provide the needed components for meeting the accreditation requirement and
+                            also helps to broaden the students' horizon in different engineering disciplines.
+                            For SENG students not in their first year of study only.
+                            Graded P or F. May be graded PP.
+                        </p>
+                        <h6 class="h6">Semester:</h6>
+                        <p>
+                            2022 Fall
+                        </p>
+                    </div>
+                </li>
+                <li class="mb-5">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Healthy Lifestyle</p><p>HLTH 1010</p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Healthy Lifestyle (HLTH 1010)</p>
+                    </div>
+                    <div class="text-justify">
+                        <h6 class="h6">Course description:</h6>
+                        <p>
+                            A compulsory, one-year course for all undergraduates to learn how to maintain a well-balanced and
+                            healthy lifestyle that will help them to manage their lives, learning, transitions and holistic development.
+                            Students will complete at least 45 hours of activities including physical and wellness assessments,
+                            sports skill classes, organized sports and fitness events, community service, as well as enrichment topics,
+                            for example, mental health, wellness, transitions, student life, and personal growth.
+                            Students with special personal reasons may seek exemption from the Director of Student Affairs.
+                            Graded P or F.
+                        </p>
+                        <h6 class="h6">Semesters:</h6>
+                        <p>
+                            2021 Fall and 2022 Spring
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div>
+    <button class="!fixed bottom-8 end-8 hidden border border-colour-7 rounded-full bg-n-8 p-4 text-base font-medium uppercase leading-tight text-n-1
+        shadow-md transition duration-150 ease-in-out lg:hover:text-n-8 lg:hover:bg-colour-7" id="topB">
+        <span>top</span>
+    </button>
+</div>
+<div class="footer text-n-1 flex bg-n-8 border-t-2 border-colour-7 mt-80">
+    <p class="my-3 ml-2">Last updated: 14th July 2024</p>
+</div>
+<script>
+    const burgButton = document.getElementById("burg");
+    const burgMenu = document.getElementById("navbarHamburger")
+
+    burgButton.addEventListener("click", () => {
+        burgMenu.classList.toggle("hidden");
+    })
+</script>
+<script>
+    // https://tw-elements.com/docs/standard/components/scroll-back-to-top-button/
+    // Get the button
+    const myButton = document.getElementById("topB");
+
+    // When the user clicks on the button, scroll to the top of the document
+    myButton.addEventListener("click", () => {
+        window.scrollTo({top: 0, behavior: "smooth"});
+    });
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.addEventListener("scroll",
+        () => document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ?
+            myButton.classList.remove("hidden") : myButton.classList.add("hidden")
+    );
+</script>
+<script>
+    const f21 = document.getElementsByClassName("f21");
+    const f21Btn = document.getElementsByClassName("f21Btn");
+    const w22 = document.getElementsByClassName("w22");
+    const w22Btn = document.getElementsByClassName("w22Btn");
+    const s22 = document.getElementsByClassName("s22");
+    const s22Btn = document.getElementsByClassName("s22Btn");
+    const su22 = document.getElementsByClassName("su22");
+    const su22Btn = document.getElementsByClassName("su22Btn");
+
+    const f22 = document.getElementsByClassName("f22");
+    const f22Btn = document.getElementsByClassName("f22Btn");
+    const w23 = document.getElementsByClassName("w23");
+    const w23Btn = document.getElementsByClassName("w23Btn");
+    const s23 = document.getElementsByClassName("s23");
+    const s23Btn = document.getElementsByClassName("s23Btn");
+    const su23 = document.getElementsByClassName("su23");
+    const su23Btn = document.getElementsByClassName("su23Btn");
+
+    const f23 = document.getElementsByClassName("f23");
+    const f23Btn = document.getElementsByClassName("f23Btn");
+    const s24 = document.getElementsByClassName("s24");
+    const s24Btn = document.getElementsByClassName("s24Btn");
+    const su24 = document.getElementsByClassName("su24");
+    const su24Btn = document.getElementsByClassName("su24Btn");
+
+    const btnArr = [f21Btn, w22Btn, s22Btn, su22Btn, f22Btn, w23Btn, s23Btn, su23Btn, f23Btn, s24Btn, su24Btn]
+    const contentArr = [f21, w22, s22, su22, f22, w23, s23, su23, f23, s24, su24]
+
+    function displayAll() {
+        Array.from(Array(btnArr.length).keys()).forEach(i =>
+            Array.from(contentArr[i]).forEach(j => {
+                Array.from(contentArr[i]).forEach(k => {
+                    if (k.classList.contains("hidden")) k.classList.remove("hidden");
+                })
+                btnArr[i][0].innerHTML = "<i class=\"fa-solid fa-caret-down\">";
+            })
+        );
+        document.getElementById("showAll").classList.add("hidden");
+        document.getElementById("collapseAll").classList.remove("hidden");
+    }
+
+    function collapseAll() {
+        Array.from(Array(btnArr.length).keys()).forEach(i =>
+            Array.from(contentArr[i]).forEach(j => {
+                Array.from(contentArr[i]).forEach(k => {
+                    if (!k.classList.contains("hidden")) k.classList.add("hidden");
+                })
+                btnArr[i][0].innerHTML = "<i class=\"fa-solid fa-caret-left\">";
+            })
+        );
+        document.getElementById("showAll").classList.remove("hidden");
+        document.getElementById("collapseAll").classList.add("hidden");
+    }
+
+    function changeVisibility(i) {
+        Array.from(contentArr[i]).forEach(j => {
+            j.classList.toggle("hidden");
+        })
+        if (contentArr[i][0].classList.contains("hidden")) {
+            btnArr[i][0].innerHTML = "<i class=\"fa-solid fa-caret-left\">";
+        } else {
+            btnArr[i][0].innerHTML = "<i class=\"fa-solid fa-caret-down\">";
+        }
+    }
+
+    document.getElementById("showAll").addEventListener("click", () => displayAll());
+    document.getElementById("collapseAll").addEventListener("click", () => collapseAll());
+
+    Array.from(Array(btnArr.length).keys()).forEach(i => {
+        changeVisibility(i);
+        btnArr[i][0].addEventListener("click", () => changeVisibility(i));
+    });
+</script>
+</body>

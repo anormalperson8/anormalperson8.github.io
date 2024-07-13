@@ -635,11 +635,6 @@ video {
   line-height: 2rem;
 }
 
-.caption {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .button {
   font-family: var(--font-code);
   font-size: 0.75rem;
@@ -984,6 +979,10 @@ video {
 
 .table-fixed {
   table-layout: fixed;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .list-circle {
