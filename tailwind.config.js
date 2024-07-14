@@ -42,9 +42,10 @@ module.exports = {
                 },
             },
             fontFamily: {
-                sans: ["var(--font-sora)", ...fontFamily.sans],
-                code: "var(--font-code)",
-                grotesk: "var(--font-grotesk)",
+                sans: ["Titillium Web", ...fontFamily.serif, ...fontFamily.sans],
+                serif: ["ui-serif", "Georgia", ...fontFamily.serif],
+                mono: ["ui-monospace", "SFMono-Regular", ...fontFamily.mono],
+                code: ["Fira Code", ...fontFamily.mono],
             },
             letterSpacing: {
                 tagline: ".15em",
@@ -73,11 +74,11 @@ module.exports = {
             borderWidth: {
                 DEFAULT: "0.0625rem",
             },
-            backgroundImage: {
-                "radial-gradient": "radial-gradient(var(--tw-gradient-stops))",
-                "conic-gradient":
-                    "conic-gradient(from 225deg, #FFC876, #79FFF7, #9F53FF, #FF98E2, #FFC876)",
-            },
+            // backgroundImage: {
+            //     "radial-gradient": "radial-gradient(var(--tw-gradient-stops))",
+            //     "conic-gradient":
+            //         "conic-gradient(from 225deg, #FFC876, #79FFF7, #9F53FF, #FF98E2, #FFC876)",
+            // },
             boxShadow: {
                 "link": "3px 4px 4px",
                 "social": "2px 2px 3px",
