@@ -676,6 +676,16 @@
                     </div>
                 </li>
                 <li class="border-2 border-colour-7 justify-center text-center mb-3">
+                    <h6 class="h6 text-center px-2">Winter 2024 <a class="cursor-pointer w24Btn"><i class="fa-solid fa-caret-down"></i></a></h6>
+                </li>
+                <li class="mb-5 w24">
+                    <div class="text-justify">
+                        <p>
+                            I did not take any courses in Winter 2024.
+                        </p>
+                    </div>
+                </li>
+                <li class="border-2 border-colour-7 justify-center text-center mb-3">
                     <h6 class="h6 text-center px-2">Spring 2024 <a class="cursor-pointer s24Btn"><i class="fa-solid fa-caret-down"></i></a></h6>
                 </li>
                 <li class="mb-5 s24">
@@ -824,8 +834,21 @@
                         </p>
                         <h6 class="h6">Note:</h6>
                         <p>
-                            The credit load is spread into 3 parts: 1 in Year-3 Summer, 2 in Year-4 Fall and 3 in Year-4 Spring.<br>
-                            Hence, the credit load is 1 credit in summer 2024.
+                            The credit load is spread into 3 parts:
+                        </p>
+                        <ul class="list-disc ml-5">
+                            <li>
+                                1 credit in the Summer semester before the final year
+                            </li>
+                            <li>
+                                2 credit in the Fall semester of the final year
+                            </li>
+                            <li>
+                                3 credit in the Spring semester of the final year
+                            </li>
+                        </ul>
+                        <p>
+                            Hence, the credit load of this course is 1 in Summer 2024.
                         </p>
                     </div>
                 </li>
@@ -1034,13 +1057,15 @@
 
     const f23 = document.getElementsByClassName("f23");
     const f23Btn = document.getElementsByClassName("f23Btn");
+    const w24 = document.getElementsByClassName("w24");
+    const w24Btn = document.getElementsByClassName("w24Btn");
     const s24 = document.getElementsByClassName("s24");
     const s24Btn = document.getElementsByClassName("s24Btn");
     const su24 = document.getElementsByClassName("su24");
     const su24Btn = document.getElementsByClassName("su24Btn");
 
-    const btnArr = [f21Btn, w22Btn, s22Btn, su22Btn, f22Btn, w23Btn, s23Btn, su23Btn, f23Btn, s24Btn, su24Btn]
-    const contentArr = [f21, w22, s22, su22, f22, w23, s23, su23, f23, s24, su24]
+    const btnArr = [f21Btn, w22Btn, s22Btn, su22Btn, f22Btn, w23Btn, s23Btn, su23Btn, f23Btn, w24Btn, s24Btn, su24Btn]
+    const contentArr = [f21, w22, s22, su22, f22, w23, s23, su23, f23, w24, s24, su24]
 
     function displayAll() {
         Array.from(Array(btnArr.length).keys()).forEach(i =>
