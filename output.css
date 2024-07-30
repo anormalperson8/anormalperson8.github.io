@@ -765,6 +765,11 @@ body {
   margin-bottom: 8rem;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .my-7 {
   margin-top: 1.75rem;
   margin-bottom: 1.75rem;
@@ -934,6 +939,10 @@ body {
   height: 2px;
 }
 
+.h-\[50vh\] {
+  height: 50vh;
+}
+
 .h-\[5px\] {
   height: 5px;
 }
@@ -954,8 +963,16 @@ body {
   width: 15rem;
 }
 
+.w-9\/12 {
+  width: 75%;
+}
+
 .w-\[120px\] {
   width: 120px;
+}
+
+.w-\[13\%\] {
+  width: 13%;
 }
 
 .w-\[25\%\] {
@@ -982,8 +999,16 @@ body {
   width: 70%;
 }
 
+.w-\[83\%\] {
+  width: 83%;
+}
+
 .w-full {
   width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .table-fixed {
@@ -1145,12 +1170,20 @@ body {
   padding-left: 0.5rem;
 }
 
+.pl-\[2\%\] {
+  padding-left: 2%;
+}
+
 .pr-2 {
   padding-right: 0.5rem;
 }
 
 .pr-4 {
   padding-right: 1rem;
+}
+
+.pr-\[2\%\] {
+  padding-right: 2%;
 }
 
 .text-left {

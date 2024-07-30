@@ -25,7 +25,7 @@
                     <a href="/pages/projects.html" class="block relative font-code text-lg uppercase transition-colors hover:text-colour-7 text-n-1/50">Projects</a>
                     <a href="/pages/contacts.html" class="block relative font-code text-lg uppercase transition-colors hover:text-colour-7 text-n-1/50">Contacts</a>
                     <a href="/pages/blogs/menu.html" class="block relative font-code text-lg uppercase transition-colors hover:text-colour-7 text-n-1/50">Blog</a>
-                    <a href="/pages/future-ready-scholars/menu.html" class="block relative font-code text-lg uppercase transition-colors hover:text-colour-7 text-n-1/50">Teaching</a>
+                    <a href="/pages/activities.html" class="block relative font-code text-lg uppercase transition-colors hover:text-colour-7 text-n-1/50">Activities</a>
                 </div>
                 <div class="flex lg:hidden text-center">
                     <div class="absolute right-10 hidden w-60 border-colour-7 border-2 rounded-lg overflow-auto" id="navbarHamburger">
@@ -46,7 +46,7 @@
                               <a href="/pages/blogs/menu.html" class="font-code uppercase block py-2 text-n-1 hover:text-n-8 bg-n-8 hover:bg-colour-7">Blog</a>
                             </li>
                             <li>
-                              <a href="/pages/future-ready-scholars/menu.html" class="font-code uppercase block py-2 text-n-1 hover:text-n-8 bg-n-8 hover:bg-colour-7">Teaching</a>
+                              <a href="/pages/activities.html" class="font-code uppercase block py-2 text-n-1 hover:text-n-8 bg-n-8 hover:bg-colour-7">Activities</a>
                             </li>
                         </ul>
                     </div>
@@ -64,10 +64,10 @@
 </div>
 <div>
     <div class="text-center text-n-1">
-        <h1 class="h1 mt-8">All Courses Taken at HKUST</h1>
-        <p class="my-2">Below are all courses I have taken at HKUST.</p>
+        <h2 class="h2 mt-8">All Courses Taken at HKUST</h2>
+        <p class="my-2">Below are all courses I have taken, or am currently taking, at HKUST.</p>
         <h3 class="h3 mt-12">Credit-Bearing Courses</h3>
-        <p class="my-2 text-sm">The assigned credit load of the courses are stated to the right of the course code.</p>
+        <p class="my-2 text-sm">The assigned credit load of the courses are stated to the right of the course codes.</p>
         <button class="button bg-n-8 text-n-1 py-2 px-2 text-center border border-colour-7 rounded-full my-2 hover:-translate-x-1
         hover:-translate-y-1.5 hover:shadow-link hover:shadow-colour-7 hover:cursor-inherit hover:ease-in ease-out duration-200
         active:translate-x-0 active:translate-y-0 active:shadow-none mx-2" id="showAll">
@@ -846,14 +846,53 @@
                                 1 credit in the Summer semester before the final year
                             </li>
                             <li>
-                                2 credit in the Fall semester of the final year
+                                2 credits in the Fall semester of the final year
                             </li>
                             <li>
-                                3 credit in the Spring semester of the final year
+                                3 credits in the Spring semester of the final year
                             </li>
                         </ul>
                         <p>
                             Hence, the credit load of this course is 1 in Summer 2024.
+                        </p>
+                    </div>
+                </li>
+                <li class="border-2 border-colour-7 justify-center text-center mb-3">
+                    <h6 class="h6 text-center px-2 cursor-pointer f24Btn">Fall 2024 (Note: This will be updated later) <a><i class="fa-solid fa-caret-down"></i></a></h6>
+                </li>
+                <li class="mb-5 f24">
+                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
+                        <p>Computer Engineering Final Year Project in COMP</p><p>CPEG 4901<span class="text-xs">&nbsp;(6)</span></p>
+                    </div>
+                    <div class="flex lg:hidden text-xl border-b border-colour-7">
+                        <p>Computer Engineering Final Year Project in COMP (CPEG 4901)<span class="text-xs">&nbsp;(6)</span></p>
+                    </div>
+                    <div class="text-justify">
+                        <h6 class="h6">Course description:</h6>
+                        <p>
+                            Each student of the Computer Engineering program is required to complete a final year project before graduation.
+                            The student is expected to conduct a project on a topic related to Computer Engineering and/or its application.
+                            The project is guided and conducted under the supervision of faculty members from the Department of Computer Science and Engineering.
+                            Credit load will be spread over the year. Instructor's approval is required for enrollment in the course.
+                            For CPEG students only.
+                        </p>
+                        <h6 class="h6">Note:</h6>
+                        <p>
+                            The credit load is spread into 3 parts:
+                        </p>
+                        <ul class="list-disc ml-5">
+                            <li>
+                                1 credit in the Summer semester before the final year
+                            </li>
+                            <li>
+                                2 credits in the Fall semester of the final year
+                            </li>
+                            <li>
+                                3 credits in the Spring semester of the final year
+                            </li>
+                        </ul>
+                        <p>
+                            Hence, the credit load of this course is 2 in Fall 2024.
                         </p>
                     </div>
                 </li>
@@ -1015,7 +1054,7 @@
     </button>
 </div>
 <div class="footer text-n-1 flex bg-n-8 border-t-2 border-colour-7 mt-80">
-    <p class="my-3 ml-2">Last updated: 19th July 2024</p>
+    <p class="my-3 ml-2">Last updated: 30th July 2024</p>
 </div>
 <script>
     const burgButton = document.getElementById("burg");
@@ -1069,8 +1108,11 @@
     const su24 = document.getElementsByClassName("su24");
     const su24Btn = document.getElementsByClassName("su24Btn");
 
-    const btnArr = [f21Btn, w22Btn, s22Btn, su22Btn, f22Btn, w23Btn, s23Btn, su23Btn, f23Btn, w24Btn, s24Btn, su24Btn]
-    const contentArr = [f21, w22, s22, su22, f22, w23, s23, su23, f23, w24, s24, su24]
+    const f24 = document.getElementsByClassName("f24");
+    const f24Btn = document.getElementsByClassName("f24Btn");
+
+    const btnArr = [f21Btn, w22Btn, s22Btn, su22Btn, f22Btn, w23Btn, s23Btn, su23Btn, f23Btn, w24Btn, s24Btn, su24Btn, f24Btn]
+    const contentArr = [f21, w22, s22, su22, f22, w23, s23, su23, f23, w24, s24, su24, f24]
 
     const closed = "<i class=\"fa-solid fa-caret-left\">";
     const opened = "<i class=\"fa-solid fa-caret-down\">";
