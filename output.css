@@ -1069,6 +1069,11 @@ body {
   border-color: rgb(255 192 0 / var(--tw-border-opacity));
 }
 
+.bg-n-5 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(63 58 82 / var(--tw-bg-opacity));
+}
+
 .bg-n-8 {
   --tw-bg-opacity: 1;
   background-color: rgb(14 12 21 / var(--tw-bg-opacity));
@@ -1080,6 +1085,11 @@ body {
 
 .p-4 {
   padding: 1rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .px-2 {
@@ -1105,6 +1115,16 @@ body {
 .px-\[15px\] {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.py-0\.5 {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
 }
 
 .py-2 {
