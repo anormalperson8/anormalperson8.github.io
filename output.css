@@ -927,6 +927,10 @@ body {
   height: 1.25rem;
 }
 
+.h-\[101px\] {
+  height: 101px;
+}
+
 .h-\[10px\] {
   height: 10px;
 }
@@ -945,10 +949,6 @@ body {
 
 .h-\[5px\] {
   height: 5px;
-}
-
-.h-\[70px\] {
-  height: 70px;
 }
 
 .min-h-screen {
@@ -1455,6 +1455,10 @@ body {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:h-\[70px\] {
+    height: 70px;
   }
 
   .lg\:flex-row {
