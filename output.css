@@ -947,10 +947,6 @@ body {
   height: 50vh;
 }
 
-.h-\[5px\] {
-  height: 5px;
-}
-
 .min-h-screen {
   min-height: 100vh;
 }
