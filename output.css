@@ -1090,6 +1090,11 @@ body {
   border-color: rgb(255 192 0 / var(--tw-border-opacity));
 }
 
+.bg-n-1 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-n-5 {
   --tw-bg-opacity: 1;
   background-color: rgb(63 58 82 / var(--tw-bg-opacity));
@@ -1274,6 +1279,11 @@ body {
 .text-n-3 {
   --tw-text-opacity: 1;
   color: rgb(173 168 195 / var(--tw-text-opacity));
+}
+
+.text-n-8 {
+  --tw-text-opacity: 1;
+  color: rgb(14 12 21 / var(--tw-text-opacity));
 }
 
 .opacity-100 {
