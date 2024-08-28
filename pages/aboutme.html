@@ -149,7 +149,7 @@
         active:translate-x-0 active:translate-y-0 active:shadow-none hidden" id="showMr">
             Show most recent semester
         </button>
-        <p>You can see a list of all courses taken at HKUST <a class="text-n-3 hover:text-n-2" href="./all-courses.html">here</a>.</p>
+        <p>You can see a list of all courses taken at HKUST <a class="text-n-3 hover:text-n-2" href="all-courses-hkust.html">here</a>.</p>
 
         <div class="border-4 border-colour-7 mx-10 lg:mx-20 2xl:mx-96 mt-5 mb-10 text-left">
             <ul class="mx-5 my-3">
@@ -414,11 +414,19 @@
                         </p>
                     </div>
                 </li>
-<!--                <li class="border-2 border-colour-7 justify-center text-center mb-3">-->
+                <li class="border-2 border-colour-7 justify-center text-center mb-3 notRecent">
 <!--                    <h6 class="inline-flex h6 text-center pl-2 recentHdr">Most Recent</h6>-->
 <!--                    <h6 class="inline-flex h6 text-center recentHdr">-</h6>-->
-<!--                    <h6 class="inline-flex h6 text-center pr-2">Fall 2024</h6>-->
-<!--                </li>-->
+                    <h6 class="inline-flex h6 text-center pr-2">Fall 2024</h6>
+
+                </li>
+                <li class="mb-5">
+                    <div class="text-justify notRecent">
+                        <p>
+                            To be updated.
+                        </p>
+                    </div>
+                </li>
 <!--                <li class="mb-5">-->
 <!--                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between"><p>Machine Learning</p><p>COMP 4211</p></div>-->
 <!--                    <div class="flex lg:hidden text-xl border-b border-colour-7"><p>Machine Learning (COMP 4211)</p></div>-->
@@ -486,7 +494,7 @@
     </button>
 </div>
 <div class="footer text-n-1 flex bg-n-8 border-t-2 border-colour-7 mt-80">
-    <p class="my-3 ml-2">Last updated: 25th August 2024</p>
+    <p class="my-3 ml-2">Last updated: 28th August 2024</p>
 </div>
 <script>
     const allButton = document.getElementById("showAll");
