@@ -13,5 +13,8 @@
   "private": true,
   "devDependencies": {
     "tailwindcss": "^3.4.4"
+  },
+  "dependencies": {
+    "micromatch": "^4.0.8"
   }
 }
