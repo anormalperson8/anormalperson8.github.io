@@ -1010,6 +1010,16 @@
                         </p>
                     </div>
                 </li>
+                <li class="border-2 border-colour-7 justify-center text-center mb-3">
+                    <h6 class="h6 text-center px-2 cursor-pointer w25Btn">Winter 2025 <a><i class="fa-solid fa-caret-down"></i></a></h6>
+                </li>
+                <li class="mb-5 w25">
+                    <div class="text-justify">
+                        <p>
+                            I did not take any courses in Winter 2025.
+                        </p>
+                    </div>
+                </li>
             </ul>
         </div>
         <h3 class="h3 mt-12">Other Courses</h3>
@@ -1198,38 +1208,10 @@
     );
 </script>
 <script>
-    const f21 = document.getElementsByClassName("f21");
-    const f21Btn = document.getElementsByClassName("f21Btn");
-    const w22 = document.getElementsByClassName("w22");
-    const w22Btn = document.getElementsByClassName("w22Btn");
-    const s22 = document.getElementsByClassName("s22");
-    const s22Btn = document.getElementsByClassName("s22Btn");
-    const su22 = document.getElementsByClassName("su22");
-    const su22Btn = document.getElementsByClassName("su22Btn");
 
-    const f22 = document.getElementsByClassName("f22");
-    const f22Btn = document.getElementsByClassName("f22Btn");
-    const w23 = document.getElementsByClassName("w23");
-    const w23Btn = document.getElementsByClassName("w23Btn");
-    const s23 = document.getElementsByClassName("s23");
-    const s23Btn = document.getElementsByClassName("s23Btn");
-    const su23 = document.getElementsByClassName("su23");
-    const su23Btn = document.getElementsByClassName("su23Btn");
-
-    const f23 = document.getElementsByClassName("f23");
-    const f23Btn = document.getElementsByClassName("f23Btn");
-    const w24 = document.getElementsByClassName("w24");
-    const w24Btn = document.getElementsByClassName("w24Btn");
-    const s24 = document.getElementsByClassName("s24");
-    const s24Btn = document.getElementsByClassName("s24Btn");
-    const su24 = document.getElementsByClassName("su24");
-    const su24Btn = document.getElementsByClassName("su24Btn");
-
-    const f24 = document.getElementsByClassName("f24");
-    const f24Btn = document.getElementsByClassName("f24Btn");
-
-    const btnArr = [f21Btn, w22Btn, s22Btn, su22Btn, f22Btn, w23Btn, s23Btn, su23Btn, f23Btn, w24Btn, s24Btn, su24Btn, f24Btn]
-    const contentArr = [f21, w22, s22, su22, f22, w23, s23, su23, f23, w24, s24, su24, f24]
+    const semNames = ["f21", "w22", "s22", "su22", "f22", "w23", "s23", "su23", "f23", "w24", "s24", "su24", "f24", "w25"]
+    const contentArr = semNames.map(_ => document.getElementsByClassName(_));
+    const btnArr = semNames.map(_ => document.getElementsByClassName(_ + "Btn"))
 
     const closed = "<i class=\"fa-solid fa-caret-left\">";
     const opened = "<i class=\"fa-solid fa-caret-down\">";
