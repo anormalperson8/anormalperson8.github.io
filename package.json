@@ -15,6 +15,7 @@
     "tailwindcss": "^3.4.4"
   },
   "dependencies": {
-    "micromatch": "^4.0.8"
+    "micromatch": "^4.0.8",
+    "staticrypt": "^3.5.0"
   }
 }
