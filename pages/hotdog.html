@@ -1,10 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/images/waving.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sunny's Website</title>
+    <title>Activities | Sunny's Website</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="/output.css" rel="stylesheet"/>
 </head>
@@ -15,7 +15,7 @@
             <a class="lg:block w-[60px] xl:ml-2" href="/index.html"><img src="/images/sunnylurking.png" alt="leftlurk"></a>
             <nav class="relative left-0 right-0 bottom-0 bg-n-8 ml-auto lg:mx-auto">
                 <div class="hidden lg:inline-flex relative flex-col items-center justify-center space-x-20 m-auto lg:flex-row">
-                    <a href="/index.html" class="block relative font-code text-lg uppercase transition-colors hover:text-colour-7 text-n-1/80">Home</a>
+                    <a href="/index.html" class="block relative font-code text-lg uppercase transition-colors hover:text-colour-7 text-n-1/50">Home</a>
                     <a href="/pages/aboutme.html" class="block relative font-code text-lg uppercase transition-colors hover:text-colour-7 text-n-1/50">About Me</a>
                     <a href="/pages/projects.html" class="block relative font-code text-lg uppercase transition-colors hover:text-colour-7 text-n-1/50">Projects</a>
                     <a href="/pages/contacts.html" class="block relative font-code text-lg uppercase transition-colors hover:text-colour-7 text-n-1/50">Contacts</a>
@@ -23,8 +23,8 @@
                     <a href="/pages/activities.html" class="block relative font-code text-lg uppercase transition-colors hover:text-colour-7 text-n-1/50">Activities</a>
                 </div>
                 <div class="flex lg:hidden text-center">
-                    <div class="absolute right-10 hidden w-60 border-colour-7 border-2 rounded-lg overflow-auto" id="navbarHamburger">
-                        <ul class="flex flex-col font-medium">
+                    <div class="absolute right-10 hidden w-60 border-colour-7 border-2 rounded-lg overflow-auto bg-n-8" id="navbarHamburger">
+                         <ul class="flex flex-col font-medium">
                             <li>
                               <a href="/index.html" class="font-code uppercase block py-2 text-n-1 hover:text-n-8 bg-n-8 hover:bg-colour-7">Home</a>
                             </li>
@@ -38,7 +38,7 @@
                               <a href="/pages/contacts.html" class="font-code uppercase block py-2 px-3 text-n-1 hover:text-n-8 bg-n-8 hover:bg-colour-7">Contacts</a>
                             </li>
                             <li>
-                              <a href="/pages/blogs/menu.html" class="font-code uppercase block py-2 text-n-1 hover:text-n-8 bg-n-8 hover:bg-colour-7">Blog</a>
+                              <a href="/pages/blogs/menu.html" class="font-code uppercase block py-2 px-3 text-n-1 hover:text-n-8 bg-n-8 hover:bg-colour-7">Blog</a>
                             </li>
                             <li>
                               <a href="/pages/activities.html" class="font-code uppercase block py-2 text-n-1 hover:text-n-8 bg-n-8 hover:bg-colour-7">Activities</a>
@@ -46,7 +46,6 @@
                         </ul>
                     </div>
                     <button id="burg" class="button inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg focus:outline-none border-2 border-colour-7">
-                      <span class="sr-only">Open main menu</span>
                       <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
                       </svg>
@@ -57,83 +56,22 @@
         </div>
     </div>
 </div>
+
 <div class="min-h-[calc(100vh-151px)] lg:min-h-[calc(100vh-120px)]">
-    <div class="mx-auto pt-36">
-        <h1 class="h1 text-n-1 text-center mb-24 font-normal">
-            Welcome to Sunny's website!
-        </h1>
-        <h6 class="h6 text-n-1 text-center">
-            Feel free to explore around. <br>
-            For information about me, check out the <a class="text-n-3 hover:text-n-2" href="/pages/aboutme.html">About Me</a> section. <br>
-            Or <a class="text-n-3 hover:text-n-2" href="./pages/hotdog.html">here, have a spinning hot dog</a>.
-        </h6>
-    </div>
-<!--    <div class="mx-auto mt-10 mb-10">-->
-<!--        <table class="lg:hidden flex table-fixed overflow-auto justify-center text-n-1">-->
-<!--            <tbody>-->
-<!--                <tr>-->
-<!--                    <th class="h3 font-code uppercase">-->
-<!--                        <a href="/pages/aboutme.html"-->
-<!--                           class="button bg-n-8 text-n-1 font-bold py-4 px-4-->
-<!--                           inline-flex text-center border border-colour-7 rounded-full-->
-<!--                           hover:-translate-x-1 hover:-translate-y-1.5 hover:shadow-link hover:shadow-colour-7 hover:cursor-inherit-->
-<!--                           hover:ease-in ease-out duration-200 active:translate-x-0 active:translate-y-0 active:shadow-none text-xl-->
-<!--                           lg:hidden mt-10">-->
-<!--                            About Me-->
-<!--                        </a>-->
-<!--                    </th>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <th class="h3 font-code uppercase">-->
-<!--                        <a href="/pages/projects.html"-->
-<!--                           class="button bg-n-8 text-n-1 font-bold py-4 px-4-->
-<!--                           inline-flex text-center border border-colour-7 rounded-full-->
-<!--                           hover:-translate-x-1 hover:-translate-y-1.5 hover:shadow-link hover:shadow-colour-7 hover:cursor-inherit-->
-<!--                           hover:ease-in ease-out duration-200 active:translate-x-0 active:translate-y-0 active:shadow-none text-xl-->
-<!--                           lg:hidden mt-10">-->
-<!--                            Projects-->
-<!--                        </a>-->
-<!--                    </th>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <th class="h3 font-code uppercase">-->
-<!--                        <a href="/pages/contacts.html"-->
-<!--                           class="button bg-n-8 text-n-1 font-bold py-4 px-4-->
-<!--                           inline-flex text-center border border-colour-7 rounded-full-->
-<!--                           hover:-translate-x-1 hover:-translate-y-1.5 hover:shadow-link hover:shadow-colour-7 hover:cursor-inherit-->
-<!--                           hover:ease-in ease-out duration-200 active:translate-x-0 active:translate-y-0 active:shadow-none text-xl-->
-<!--                           lg:hidden mt-10">-->
-<!--                            Contacts-->
-<!--                        </a>-->
-<!--                    </th>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <th class="h3 font-code uppercase">-->
-<!--                        <a href="pages/future-ready-scholars/menu.html"-->
-<!--                           class="button bg-n-8 text-n-1 font-bold py-4 px-4-->
-<!--                           inline-flex text-center border border-colour-7 rounded-full-->
-<!--                           hover:-translate-x-1 hover:-translate-y-1.5 hover:shadow-link hover:shadow-colour-7 hover:cursor-inherit-->
-<!--                           hover:ease-in ease-out duration-200 active:translate-x-0 active:translate-y-0 active:shadow-none text-xl-->
-<!--                           lg:hidden mt-10">Teaching-->
-<!--                        </a>-->
-<!--                    </th>-->
-<!--                </tr>-->
-<!--            </tbody>-->
-<!--        </table>-->
-<!--    </div>-->
-    <div class="pb-32">
-        <div class="lg:block w-[120px] mt-6 mx-auto"><img src="/images/sunnylaughing.png" alt="laugh"></div>
+    <div class="mt-4 mx-auto text-n-1">
+        <h4 class="h4 text-center">Hot dog!</h4>
+        <img src="../images/hotdog.gif" alt="spinning-hotdog" title="A spinning hot dog!" class="mx-auto w-full">
     </div>
 </div>
+
 <div>
     <button class="!fixed bottom-8 end-8 hidden border border-colour-7 rounded-full bg-n-8 p-4 text-base font-medium uppercase leading-tight text-n-1
         shadow-md transition duration-150 ease-in-out lg:hover:text-n-8 lg:hover:bg-colour-7" id="topB">
         <span>top</span>
     </button>
 </div>
-<div class="min-h-full"></div>
-<div class="footer text-n-1 flex bg-n-8 border-t-2 border-colour-7 mt-auto">
-    <p class="my-3 ml-2">Last updated: 15th August 2024</p>
+<div class="footer text-n-1 flex bg-n-8 border-t-2 border-colour-7">
+    <p class="my-3 ml-2">Last updated: 23rd December 2024</p>
 </div>
 <script>
     const burgButton = document.getElementById("burg");
