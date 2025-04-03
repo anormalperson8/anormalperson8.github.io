@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="/output.css" rel="stylesheet"/>
 </head>
-<body class="min-h-screen bg-n-8" onload="toggleNonRecent()">
+<body class="min-h-screen bg-n-8">
 <div>
     <div class="top-0 left-0 w-full border-b border-colour-7 lg:backdrop-blur-sm bg-n-8 h-[101px] lg:h-[70px]">
         <div class="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
@@ -118,6 +118,7 @@
                         <li><a class="text-n-3 hover:text-n-2" target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/HTML">HTML</a></li>
                         <li><a class="text-n-3 hover:text-n-2" target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/LaTeX">LaTeX</a></li>
                         <li><a class="text-n-3 hover:text-n-2" target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Markdown">Markdown</a></li>
+                        <li><a class="text-n-3 hover:text-n-2" target="_blank" rel="noopener noreferrer" href="https://typst.app/">Typst</a> (an alternate markup language to LaTeX)</li>
                     </ul>
                 </li>
                 <li class="mb-3"><p class="text-xl">Other technical skills:</p>
@@ -130,373 +131,20 @@
                 <li class="mb-3"><p class="text-xl">Things I am actively learning:</p>
                     <ul class="list-disc mx-5">
                         <li><a class="text-n-3 hover:text-n-2" target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Flutter_(software)">Flutter</a> (a <a class="text-n-3 hover:text-n-2" target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Dart_(programming_language)">Dart</a> library)</li>
-                        <li><a class="text-n-3 hover:text-n-2" target="_blank" rel="noopener noreferrer" href="https://typst.app/">Typst</a> (an alternate markup language to LaTeX)</li>
                         <li>Spanish (on Duolingo)</li>
-                        <li>Greek (on Duolingo, casually)</li>
                     </ul>
                 </li>
             </ul>
         </div>
 
-        <h3 class="h3 mt-8">Selected Courses Taken at HKUST</h3>
-        <button class="button bg-n-8 text-n-1 py-2 px-2 text-center border border-colour-7 rounded-full my-2 hover:-translate-x-1
-        hover:-translate-y-1.5 hover:shadow-link hover:shadow-colour-7 hover:cursor-inherit hover:ease-in ease-out duration-200
-        active:translate-x-0 active:translate-y-0 active:shadow-none" id="showAll">
-            Show all semesters
-        </button>
-        <button class="button bg-n-8 text-n-1 py-2 px-2 text-center border border-colour-7 rounded-full my-2 hover:-translate-x-1
-        hover:-translate-y-1.5 hover:shadow-link hover:shadow-colour-7 hover:cursor-inherit hover:ease-in ease-out duration-200
-        active:translate-x-0 active:translate-y-0 active:shadow-none hidden" id="showMr">
-            Show most recent semester
-        </button>
-        <p>You can see a list of all courses taken at HKUST <a class="text-n-3 hover:text-n-2" href="all-courses-hkust.html">here</a>.</p>
-
-        <div class="border-4 border-colour-7 mx-10 lg:mx-20 2xl:mx-96 mt-5 mb-10 text-left">
-            <ul class="mx-5 my-3">
-                <li class="border-2 border-colour-7 justify-center text-center mb-3 notRecent"><h6 class="h6 text-center px-2">Fall 2022</h6></li>
-                <li class="mb-5 notRecent">
-                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
-                        <p>A System View of Communications: from Signals to Packets</p><p>ELEC 1200</p>
-                    </div>
-                    <div class="flex lg:hidden text-xl border-b border-colour-7">
-                        <p>A System View of Communications: from Signals to Packets (ELEC 1200)</p>
-                    </div>
-                    <div class="text-justify mb-2">
-                        <h6 class="h6">Course description:</h6>
-                        <p class="mb-1">
-                            Have you ever wondered what technologies go into your mobile phone or a WiFi hotspot?
-                            Through hands on work with a simple but fully functional wireless communication system,
-                            you will understand the basic engineering tools used and tradeoffs encountered in the design of these systems.
-                            This course is centered on weekly laboratories, each designed to introduce an important concept in the design of these systems.
-                            The lab sessions are supported by two one-hour lectures and a tutorial that introduce the concepts for the next laboratory,
-                            as well as reviewing and expanding the concepts learned in the previous laboratory.
-                        </p>
-                        <h6 class="h6">Comments:</h6>
-                        <p>
-                            The introduction of signal processing was interesting. It equipped me with some basic knowledge
-                            regarding this field, and introduced basic forms and applications of commonly-used algorithms.
-                        </p>
-                    </div>
-                </li>
-
-                <li class="border-2 border-colour-7 justify-center text-center mb-3 notRecent"><h6 class="h6 text-center px-2">Spring 2023</h6></li>
-                <li class="mb-5 notRecent">
-                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
-                        <p>Object-Oriented Programming and Data Structures</p><p>COMP 2012</p>
-                    </div>
-                    <div class="flex lg:hidden text-xl border-b border-colour-7">
-                        <p>Object-Oriented Programming and Data Structures (COMP 2012)</p>
-                    </div>
-                    <div class="text-justify mb-2">
-                        <h6 class="h6">Course description:</h6>
-                        <p class="mb-1">
-                            To learn the fundamental concepts and techniques behind object-oriented programming.
-                            They include: abstract data types; creation, initialization, and destruction of objects; class hierarchies;
-                            polymorphism, inheritance and dynamic binding; generic programming using templates.
-                            To learn the object-oriented view of data structures: linked lists, stacks, queues, binary trees,
-                            and algorithms such as searching and hashing.
-                        </p>
-                        <h6 class="h6">Comments:</h6>
-                        <p>
-                            This course introduced me to the world of object-oriented Programming (OOP), a widely-used
-                            programming model that is useful for most programming task I encounter. This pushed me towards a
-                            large number of possible topics in the world of computer science, some of which I took courses on and
-                            are stated below.
-                        </p>
-                    </div>
-                </li>
-                <li class="mb-5 notRecent">
-                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
-                        <p>Discrete Mathematical Tools for Computer Science</p><p>COMP 2711</p>
-                    </div>
-                    <div class="flex lg:hidden text-xl border-b border-colour-7">
-                        <p>Discrete Mathematical Tools for Computer Science (COMP 2711)</p>
-                    </div>
-                    <div class="text-justify mb-2">
-                        <h6 class="h6">Course description:</h6>
-                        <p class="mb-1">
-                            Basic concepts in discrete mathematics needed for the study of computer science: enumeration techniques,
-                            basic number theory, logic and proofs, recursion and recurrences, probability theory and graph theory.
-                            The approach of this course is specifically computer science application oriented.
-                        </p>
-                        <h6 class="h6">Comments:</h6>
-                        <p>
-                            This course taught me a lot of basic mathematics skills and tools required for computer science
-                            topics later on. From graph theory to counting methods, it prepared me for more difficult courses,
-                            e.g. machine learning and algorithm courses.
-                        </p>
-                    </div>
-                </li>
-                <li class="border-2 border-colour-7 justify-center text-center mb-3 notRecent"><h6 class="h6 text-center px-2">Fall 2023</h6></li>
-                <li class="mb-5 notRecent">
-                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
-                        <p>Exploring Artificial Intelligence</p><p>COMP 2211</p>
-                    </div>
-                    <div class="flex lg:hidden text-xl border-b border-colour-7">
-                        <p>Exploring Artificial Intelligence (COMP 2211)</p>
-                    </div>
-                    <div class="text-justify">
-                        <h6 class="h6">Course description:</h6>
-                        <p>
-                            This course aims to give a gentle introduction to the basic elements of artificial intelligence (AI)
-                            through understanding examples from various applications and hands-on experimentation using AI software tools.
-                            In addition to covering the technical aspect of AI through such topics as search and problem-solving,
-                            knowledge representation, probabilistic reasoning, machine learning, computer vision and image processing,
-                            speech and language processing, and robotics, this course will also study the historical perspective,
-                            social and ethical implications, as well as potential and limitations of AI.
-                        </p>
-                        <h6 class="h6">Comments:</h6>
-                        <p>
-                            This course has a focus on machine learning (ML), which is highly beneficial for any ML courses
-                            I will take in the future. From image processing to natural language processing, this course
-                            had tasks that familiarized me with ML concepts and relevant coding libraries (e.g. Numpy & Tensorflow).
-                            Aside from ML, the course also taught me minimax algorithms and other non-ML AI technologies
-                            and their implementations.
-                        </p>
-                    </div>
-                </li>
-                <li class="mb-5 notRecent">
-                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between"><p>Java Programming</p><p>COMP 3021</p></div>
-                    <div class="flex lg:hidden text-xl border-b border-colour-7"><p>Java Programming (COMP 3021)</p></div>
-                    <div class="text-justify">
-                        <h6 class="h6">Course description:</h6>
-                        <p>
-                            Introduction to Java programming. Fundamentals include language syntax, object-oriented programming,
-                            inheritance, polymorphism, exception handling, multithreading and lambdas. Standard libraries for input/output,
-                            graphics programming, built-in data structures. Programming for events, generics and higher-order functions.
-                        </p>
-                        <h6 class="h6">Comments:</h6>
-                        <p>
-                            This course further strengthened my ability in OOP, with different types of implementation of object
-                            inheritance and interfaces in the Java programming language. It also introduces concurrent and functional programming,
-                            which bridges to a wide range of applications, namely software development. Java, being one of the
-                            most popular programming languages in the world, is something I believe important to know in
-                            terms of software development.
-                        </p>
-                    </div>
-                </li>
-                <li class="mb-5 notRecent">
-                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between"><p>Honors Software Engineering</p><p>COMP 3111H</p></div>
-                    <div class="flex lg:hidden text-xl border-b border-colour-7"><p>Honors Software Engineering (COMP 3111H)</p></div>
-                    <div class="text-justify">
-                        <h6 class="h6">Course description:</h6>
-                        <p>
-                            General methodologies, techniques, and tools for planning, designing, implementing, validating,
-                            and maintaining large-scale software systems. Collaborative development environment, automatic static analysis,
-                            and testing techniques. Open source project development methodologies and techniques.
-                        </p>
-                        <h6 class="h6">Comments:</h6>
-                        <p>
-                            This course taught me how to accept ideas and concepts from others and turn it into
-                            concrete software code. It was also a very important experience that let me understand what
-                            difficulties one may encounter when trying to cater to a variety of requests and translate them
-                            into implementable ideas.
-                        </p>
-                    </div>
-                </li>
-                <li class="border-2 border-colour-7 justify-center text-center mb-3 notRecent">
-                    <h6 class="inline-flex h6 text-center pr-2">Spring 2024</h6>
-                </li>
-                <li class="mb-5 notRecent">
-                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between"><p>Operating Systems</p><p>COMP 3511</p></div>
-                    <div class="flex lg:hidden text-xl border-b border-colour-7"><p>Operating Systems (COMP 3511)</p></div>
-                    <div class="text-justify">
-                        <h6 class="h6">Course description:</h6>
-                        <p>
-                            Principles, purpose and structure of operating systems; processes, threads, and multi-threaded programming;
-                            CPU scheduling; synchronization, mutual exclusion; memory management and virtual memory; device management;
-                            file systems, security and protection.
-                        </p>
-                        <h6 class="h6">Comments:</h6>
-                        <p>
-                            This course introduced me to concurrent programming from a low-level perspective. The questions I've always had
-                            in my mind, e.g. "How does an OS work?", "When the CPU has multiple long tasks how are they dealt with?", are answered.
-                            It also provided me an opportunity to implement a (albeit subpar) shell with C.
-                        </p>
-                    </div>
-                </li>
-                <li class="mb-5 notRecent">
-                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
-                        <p>Design and Analysis of Algorithms</p><p>COMP 3711</p>
-                    </div>
-                    <div class="flex lg:hidden text-xl border-b border-colour-7">
-                        <p>Design and Analysis of Algorithms (COMP 3711)</p>
-                    </div>
-                    <div class="text-justify">
-                        <h6 class="h6">Course description:</h6>
-                        <p>
-                            Techniques for designing algorithms, proving their correctness, and analyzing their running times.
-                            Topics covered include: sorting, selection, heaps, balanced search trees, divide-and-conquer, greedy algorithms,
-                            dynamic programming, and graph algorithms.
-                        </p>
-                        <h6 class="h6">Comments:</h6>
-                        <p>
-                            This course demystified what algorithm analysis is. While the course had more focus on the analysis
-                            part of algorithms, I learnt a lot about commonly-used algorithms, and which to apply depending on situations.
-                            I'm sure knowledge here will be useful in the future.
-                        </p>
-                    </div>
-                </li>
-                <li class="mb-5 notRecent">
-                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
-                        <p>Introduction to Natural Language Processing</p><p>COMP 4221</p>
-                    </div>
-                    <div class="flex lg:hidden text-xl border-b border-colour-7">
-                        <p>Introduction to Natural Language Processing (COMP 4221)</p>
-                    </div>
-                    <div class="text-justify">
-                        <h6 class="h6">Course description:</h6>
-                        <p>
-                            This course provides an introduction to the tasks, models and algorithms of natural language
-                            processing (NLP) including the fundamental NLP tasks and models (such as language model, text classification,
-                            word vectors, sequence labelling, etc.), and several typical NLP applications (such as question answering,
-                            dialogue systems and machine translation, etc.), and the linguistic structure annotation
-                            (such as constituency parsing and dependency parsing).
-                            The course also introduces some advanced topics such as pre-trained language models and their
-                            prompt tuning and instruct tuning methods to give the students more perspectives of the NLP industry.
-                        </p>
-                        <h6 class="h6">Comments:</h6>
-                        <p>
-                            This is one of the first courses I took that dives in the fields of ML/Big Data Technologies.
-                            It introduces machine learning on spoken/text languages and context-based approaches to machine translation.
-                            I hope I will be able to apply knowledge acquired here to other ML courses in the future.
-                        </p>
-                    </div>
-                </li>
-                <li class="mb-5 notRecent">
-                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
-                        <p>The Art of Thinking in the Hong Kong Context</p><p>HUMA 1710</p>
-                    </div>
-                    <div class="flex lg:hidden text-xl border-b border-colour-7">
-                        <p>The Art of Thinking in the Hong Kong Context (HUMA 1710)</p>
-                    </div>
-                    <div class="text-justify">
-                        <h6 class="h6">Course description:</h6>
-                        <p>
-                            This course aims to provide a basic introduction to the art of thinking.
-                            The focus of this course is on methodology.
-                            Students will be equipped with critical tools for the analysis of arguments.
-                            Moreover, special attention will be given to the application of such tools to the practical affairs of everyday life.
-                        </p>
-                        <h6 class="h6">Comments:</h6>
-                        <p>
-                            A course I really wanted to take for my Humanities minor.
-                            This course isn't particularly difficult, but it introduces a philosophical look on our daily lives.
-                            I was introduced to logical thinking and the pitfalls of language.
-                            It allowed me to more accurately phrase things I want to say by making me more aware of the ambiguities that could occur in normal conversations.
-                            Overall, it was an indulgence of my interest in Humanities, particularly things related to linguistics.
-                        </p>
-                    </div>
-                </li>
-                <li class="mb-5 notRecent">
-                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
-                        <p>Undergraduate Teaching Opportunities</p><p>IDPO 2910</p>
-                    </div>
-                    <div class="flex lg:hidden text-xl border-b border-colour-7">
-                        <p>Undergraduate Teaching Opportunities (IDPO 2910)</p>
-                    </div>
-                    <div class="text-justify">
-                        <h6 class="h6">Course description:</h6>
-                        <p>
-                            This course aims to provide students with real-life, hands-on learning and teaching experience.
-                            Students will take part in lesson preparation, actual teaching and reflection session.
-                            Training on teaching skills and consultation with faculty will be provided to ensure the quality of students’ teaching.
-                        </p>
-                        <h6 class="h6">Comments:</h6>
-                        <p>
-                            This is a course that lets student gain experience on teaching actual secondary students with
-                            a topic of their choice. It helps with my  communication skills and how I can interpret/explain
-                            concepts and ideas, which is beneficial  from a soft-skill perspective.
-                            It was an interesting experience having to deal with requests from  multitude of stakeholders
-                            and balance them while ensuring lessons delivered were of good quality.
-                        </p>
-                    </div>
-                </li>
-                <li class="border-2 border-colour-7 justify-center text-center mb-3">
-                    <h6 class="inline-flex h6 text-center pl-2 recentHdr">Most Recent</h6>
-                    <h6 class="inline-flex h6 text-center recentHdr">-</h6>
-                    <h6 class="inline-flex h6 text-center pr-2">Fall 2024</h6>
-                </li>
-                <li class="mb-5">
-                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between"><p>Principle of Programming Languages</p><p>COMP 3031</p></div>
-                    <div class="flex lg:hidden text-xl border-b border-colour-7"><p>Principle of Programming Languages (COMP 3031)</p></div>
-                    <div class="text-justify">
-                        <h6 class="h6">Course description:</h6>
-                        <p>
-                            Comparative studies of programming languages, programming language concepts and constructs.
-                            Non-imperative programming paradigms: object-oriented, functional, logic, concurrent programming.
-                            Basic concepts of program translation and interpretation. Storage allocation and run-time organization.
-                        </p>
-                        <h6 class="h6">Comments:</h6>
-                        <p>
-                            Functional programming is something new to me. Throughout the course, the more I learnt about this the more fascinated I felt.
-                            It's certainly nice to be introduced to Scala, which I've come to discover is useful in certain cloud computing scenarios.
-                            I am also intrigued by Lisp, which I would not have learnt if not for this course.
-                        </p>
-                    </div>
-                </li>
-                <li class="mb-5">
-                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between"><p>Machine Learning</p><p>COMP 4211</p></div>
-                    <div class="flex lg:hidden text-xl border-b border-colour-7"><p>Machine Learning (COMP 4211)</p></div>
-                    <div class="text-justify">
-                        <h6 class="h6">Course description:</h6>
-                        <p>
-                            This course provides a comprehensive coverage of the machine learning field.
-                            It introduces the foundations of machine learning, such as optimization, regularization, and generalization.
-                            It covers several traditional machine learning algorithms and various types of neural networks,
-                            such as feedforward, convolutional, recurrent, and transformer models, as well as their applications to computer vision,
-                            natural language processing, and generative modelling.
-                            The course also includes selected advanced topics.
-                        </p>
-                        <h6 class="h6">Comments:</h6>
-                        <p>
-                            After COMP 4221, this strengthens my knowledge of ML as a whole.
-                            A lot of confusing points were cleared up in this course,
-                            and I got to learn more about the things I've seen from COMP 2211 and COMP 4221.
-                        </p>
-                    </div>
-                </li>
-                <li class="mb-5">
-                    <div class="hidden lg:flex text-2xl border-b border-colour-7 justify-between">
-                        <p>Cloud Computing and Big Data Systems</p><p>COMP 4651</p>
-                    </div>
-                    <div class="flex lg:hidden text-xl border-b border-colour-7">
-                        <p>Cloud Computing and Big Data Systems (COMP 4651)</p>
-                    </div>
-                    <div class="text-justify">
-                        <h6 class="h6">Course description:</h6>
-                        <p>
-                            Big data systems, including Cloud Computing and parallel data processing frameworks,
-                            emerge as enabling technologies in managing and mining the massive amount of data across hundreds
-                            or even thousands of commodity servers in datacenters. This course exposes students to both the
-                            theory and hands-on experience of this new technology. The course will cover the following topics.
-                            (1) Basic concepts of Cloud Computing and production Cloud services;
-                            (2) MapReduce - the de facto datacenter-scale programming abstraction - and its open source implementation of Hadoop.
-                            (3) Apache Spark - a new generation parallel processing framework - and its infrastructure, programming model,
-                            cluster deployment, tuning and debugging, as well as a number of specialized data processing systems built on top of Spark.
-                            By walking through a number of hands-on labs and assignments, students are expected to gain
-                            first-hand experience programming on real world clusters in production datacenters.
-                        </p>
-                        <h6 class="h6">Comments:</h6>
-                        <p>
-                            Two of the most important aspects of information technology in this day and age.
-                            It's nice to be guided through and explained what cloud is,
-                            and be given some hands-on experience surrounding common big data technologies.
-                        </p>
-                    </div>
-                </li>
-                <li class="border-2 border-colour-7 justify-center text-center mb-3">
-                    <h6 class="inline-flex h6 text-center pr-2">Upcoming - Spring 2025</h6>
-                </li>
-                <li class="mb-5">
-                    <div class="text-justify">
-                        <p>
-                            Coming soon. <span class="recentHdr">Click "Show All Semesters" above to see other semesters!</span>
-                        </p>
-                    </div>
-                </li>
-            </ul>
+        <h3 class="h3 mt-8">Others</h3>
+        <div class="mx-10 lg:mx-20 2xl:mx-96 mt-5 mb-10 text-center">
+            <p class="my-2">
+                You can find out details about the courses I've taken at HKUST <a class="text-n-3 hover:text-n-2" href="./all-courses-hkust.html">here</a>.
+            </p>
         </div>
+
+
 
 
 <!--        <a href="../index.html"-->
@@ -521,31 +169,6 @@
 <div class="footer text-n-1 flex bg-n-8 border-t-2 border-colour-7">
     <p class="my-3 ml-2">Last updated: 3rd April 2025</p>
 </div>
-<script>
-    const allButton = document.getElementById("showAll");
-    const mrButton = document.getElementById("showMr");
-    const notRecent = document.getElementsByClassName("notRecent");
-    const hdr = document.getElementsByClassName("recentHdr");
-
-    function toggleNonRecent() {
-        Array.from(notRecent).forEach(i => i.classList.toggle("hidden"));
-    }
-
-    function toggleButton() {
-        allButton.classList.toggle("hidden");
-        mrButton.classList.toggle("hidden");
-        Array.from(hdr).forEach(i => i.classList.toggle("hidden"));
-    }
-
-    allButton.addEventListener("click", () => {
-        toggleButton();
-        toggleNonRecent();
-    });
-    mrButton.addEventListener("click", () => {
-        toggleButton();
-        toggleNonRecent();
-    });
-</script>
 <script>
     const burgButton = document.getElementById("burg");
     const burgMenu = document.getElementById("navbarHamburger")
