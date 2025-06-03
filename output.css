@@ -1068,6 +1068,10 @@ body {
   border-width: 0.0625rem;
 }
 
+.border-0 {
+  border-width: 0px;
+}
+
 .border-2 {
   border-width: 2px;
 }
@@ -1095,6 +1099,11 @@ body {
 .border-colour-7 {
   --tw-border-opacity: 1;
   border-color: rgb(255 192 0 / var(--tw-border-opacity));
+}
+
+.bg-gray-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
 .bg-n-1 {
@@ -1163,6 +1172,11 @@ body {
 .py-0\.5 {
   padding-top: 0.125rem;
   padding-bottom: 0.125rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .py-2 {
