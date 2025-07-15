@@ -26,6 +26,5 @@ dist-ssr
 template.html
 *-original.html
 encryptHTML.sh
-.staticrypt.json
 encrypted/
 original/
